@@ -64,7 +64,10 @@ export default function Project() {
 
   return (
     <>
-      <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
+      <section
+        id="project"
+        className="flex justify-center flex-col w-[1140px] m-auto mt-[112px] pt-[80px]"
+      >
         <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Project</h2>
         <div className="mt-10 flex item-center justify-center rounded-lg flex-wrap">
           {projects.map((item) => (
