@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Nav from "./components/Nav";
 import AboutMe from "./components/AboutMe";
 
@@ -9,11 +10,12 @@ export default function Home() {
         <Nav />
         <Header />
       </header>
-      <div>
-        <main>
-          <AboutMe />
-        </main>
-      </div>
+      <main>
+        <AboutMe />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

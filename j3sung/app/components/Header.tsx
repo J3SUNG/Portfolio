@@ -10,8 +10,8 @@ export default function Header() {
         className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-center">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="mr-28 text-4xl font-bold tracking-tight text-white sm:text-8xl">
+        <div className="mx-auto max-w-2xl ">
+          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-8xl">
             WEB
             <br />
             DEVELOPER
