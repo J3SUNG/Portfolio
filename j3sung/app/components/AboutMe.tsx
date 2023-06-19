@@ -1,21 +1,19 @@
-import headerImg from "/public/img/sky.jpg";
+import profileImg from "/public/img/profile.jpg";
 import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-48">
+    <div className="py-48 sm:py-96">
+      <h2 className="mr-28 text-4xl font-bold tracking-tight text-white sm:text-8xl bg-black w-full">
+        About me
+      </h2>
       <Image
-        src={headerImg}
+        src={profileImg}
         alt=""
-        className="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
+        className="inset-0 -z-10 h-80 w-auto object-cover object-right md:object-center"
       />
       <div className="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-center">
         <div className="mx-auto max-w-2xl">
-          <h2 className="mr-28 text-4xl font-bold tracking-tight text-white sm:text-8xl">
-            WEB
-            <br />
-            DEVELOPER
-          </h2>
           <p className="absolute top-[130px] mt-20 ml-64 text-6xl italic font-DancingScript text-yellow-300">
             Jeseong Lee
           </p>
