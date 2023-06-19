@@ -6,6 +6,10 @@
   font-family: "DancingScript";
   src: url("../public/font/DancingScript-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "Binggrae";
+  src: url("../public/font/Binggrae.ttf");
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

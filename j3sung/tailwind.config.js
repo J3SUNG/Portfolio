@@ -14,6 +14,7 @@ module.exports = {
     },
     fontFamily: {
       DancingScript: ["DancingScript"],
+      Binggrae: ["Binggrae"],
     },
   },
   plugins: [],
