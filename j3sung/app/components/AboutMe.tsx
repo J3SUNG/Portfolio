@@ -28,31 +28,6 @@ export default function AboutMe() {
             <li>경험 : Qualcomm Institute 학생 인턴 (2020-09-15 ~ 2021-06-30)</li>
             <li>교육 : 삼성 청년 SW 아카데미 1학기 (2023.01.04 ~ 2023.05.26 (800시간))</li>
           </ul>
-          {/* <ul>
-            <li>
-              - 2019 대경권 프로그래밍 경진대회 / 장려상 / 경북, 한동, 안동, 대구가톨릭 대학교 /
-              2019.05.11
-            </li>
-            <li>
-              - 디지털로 만드는 스마트 하우스 공모전 / 창의상 / 대구 메이커 페스타 / 2019.06.02
-            </li>
-            <li>
-              - 2019 ACM-ICPC 서울대회 / Certificate of Achievement / International Collegiate
-              Programming Contest / 2019.11.09
-            </li>
-            <li>
-              - 2019년 학부생 논문 및 캡스톤디자인 경진대회 / 우수상 / 한국방송 미디어 공학회 /
-              2019.11.30
-            </li>
-            <li>- 2019학년도 SW해커톤 경진대회 / 우수상 / 계명대학교 / 2019.12.16</li>
-            <li>
-              - Health-related IoT Tracking Platform Challenge / Outstanding Achievement Award /
-              Qualcomm Institute / 2020.02.24
-            </li>
-            <li>
-              - 1학기 프로젝트 최우수상 / 최우수상 / 삼성전자주식회사 / 2023.01.04 ~ 2023.05.26
-            </li>
-          </ul> */}
         </div>
       </div>
     </section>
