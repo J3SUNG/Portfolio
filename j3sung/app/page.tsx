@@ -12,8 +12,6 @@ export default function Home() {
       </header>
       <main>
         <AboutMe />
-        <AboutMe />
-        <AboutMe />
       </main>
       <footer>
         <Footer />

@@ -2,6 +2,7 @@
 
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "#" },
@@ -25,7 +26,7 @@ export default function Nav() {
                     <div className="hidden md:block w-full">
                       <div className="flex items-center justify-center space-x-8 w-full">
                         {navigation.map((item) => (
-                          <a
+                          <Link
                             key={item.name}
                             href={item.href}
                             className={
@@ -33,7 +34,7 @@ export default function Nav() {
                             }
                           >
                             {item.name}
-                          </a>
+                          </Link>
                         ))}
                       </div>
                     </div>
