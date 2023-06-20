@@ -6,11 +6,13 @@ import AboutMe from "./components/AboutMe";
 export default function Home() {
   return (
     <>
-      <header>
-        <Nav />
+      <Nav />
+      <header className="sticky -top-[500px]">
         <Header />
       </header>
       <main>
+        <AboutMe />
+        <AboutMe />
         <AboutMe />
       </main>
       <footer>

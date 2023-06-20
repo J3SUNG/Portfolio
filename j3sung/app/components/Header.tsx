@@ -15,6 +15,7 @@ export default function Header() {
             WEB
             <br />
             DEVELOPER
+            <p className="animate-blink inline ml-4">_</p>
           </h2>
           <p className="absolute top-[130px] mt-20 ml-64 text-6xl italic font-DancingScript text-yellow-300">
             Jeseong Lee
