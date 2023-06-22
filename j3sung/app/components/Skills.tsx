@@ -19,6 +19,7 @@ import scss from "@/public/img/skill/scss.png";
 import spring from "@/public/img/skill/spring.png";
 import tailwind from "@/public/img/skill/tailwind.png";
 import Image, { StaticImageData } from "next/image";
+import Chart from "./Chart";
 
 let skill: { img: StaticImageData; name: string; ability: number }[] = [
   { img: html, name: "HTML", ability: 8 },
@@ -48,7 +49,7 @@ export default function Skills() {
     <>
       <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
         <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Skills</h2>
-        <div className="flex flex-wrap mt-10">
+        <div className="flex flex-wrap">
           {skill.map((item) => (
             <SkillCard item={item} key={item.name} />
           ))}
@@ -78,9 +79,17 @@ const SkillCard = ({ item }: skillProps) => {
     "w-[90%]",
   ];
   return (
-    <div className="">
-      <Image src={item.img} className="w-40 h-40 object-fill" alt={item.name} />
-      <div className="flex justify-center flex-col content-center w-40 h-40 mx-4 mb-4">
+    <div className="relative">
+      <Image
+        src={item.img}
+        className="absolute w-40 h-40 object-fill m-[30px] p-[24px] mt-[80px]"
+        alt={item.name}
+      />
+      <Chart ability={item.ability} />
+      <p className="absolute w-full text-center font-bold text-xl">
+        {item.name} <span className="text-orange-400">({item.ability}/10)</span>
+      </p>
+      {/* <div className="flex justify-center flex-col content-center w-40 h-40 mx-4 mb-4">
         <p className="text-center font-bold">{item.name}</p>
         <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-[20px]">
           <div
@@ -91,7 +100,7 @@ const SkillCard = ({ item }: skillProps) => {
             {item.ability} / 10
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
