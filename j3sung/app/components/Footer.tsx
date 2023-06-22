@@ -2,6 +2,7 @@ import Image from "next/image";
 import githubImg from "@/public/img/logo/github.png";
 import tistoryImg from "@/public/img/logo/tistory.png";
 import kakaoImg from "@/public/img/logo/kakao.png";
+import email from "@/public/img/logo/email.png";
 import Link from "next/link";
 
 export default function Footer() {
@@ -14,7 +15,7 @@ export default function Footer() {
             alt="github image"
             width={48}
             height={48}
-            className="border-2 border-white rounded-full mx-4 bg-white"
+            className="border-2 border-white rounded-full mx-2 bg-white"
           />
         </Link>
         <Link href="https://j3sung.tistory.com/" target="_blank">
@@ -23,7 +24,7 @@ export default function Footer() {
             alt="tistory image"
             width={48}
             height={48}
-            className="border-2 border-white rounded-full mx-4 bg-black"
+            className="border-2 border-white rounded-full mx-2 bg-white"
           />
         </Link>
         <Link href="https://open.kakao.com/o/sRr7WMqf" target="_blank">
@@ -32,7 +33,16 @@ export default function Footer() {
             alt="tistory image"
             width={48}
             height={48}
-            className="border-2 border-white rounded-full mx-4 bg-white"
+            className="border-2 border-white rounded-full mx-2 bg-white"
+          />
+        </Link>
+        <Link href="mailto:wptjd6141@naver.com" target="_blank">
+          <Image
+            src={email}
+            alt="tistory image"
+            width={48}
+            height={48}
+            className="border-2 border-white rounded-full mx-2 bg-white"
           />
         </Link>
       </div>

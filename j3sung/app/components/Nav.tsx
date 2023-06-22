@@ -9,8 +9,8 @@ const navigation = [
   { name: "About me", href: "#" },
   { name: "Skills", href: "#" },
   { name: "Archiving", href: "#" },
+  { name: "Experience", href: "#" },
   { name: "Projects", href: "#" },
-  { name: "Contact", href: "#" },
 ];
 
 export default function Nav() {

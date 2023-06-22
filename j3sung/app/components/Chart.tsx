@@ -8,17 +8,17 @@ interface propsType {
 const Chart = (props: propsType) => {
   let { ability } = props;
   let backColor = [
-    "#89a8ff",
-    "#89a8ff",
-    "#89a8ff",
-    "#89a8ff",
-    "#89a8ff",
-    "#89a8ff",
-    "#89a8ff",
-    "#89a8ff ",
-    "#89a8ff ",
-    "#89a8ff ",
-    "#89a8ff ",
+    "#525FE1",
+    "#525FE1",
+    "#525FE1",
+    "#525FE1",
+    "#525FE1",
+    "#525FE1",
+    "#525FE1",
+    "#525FE1 ",
+    "#525FE1 ",
+    "#525FE1 ",
+    "#525FE1 ",
   ];
   return (
     <PieChart
@@ -29,7 +29,7 @@ const Chart = (props: propsType) => {
           name: "name1",
         },
       ]}
-      className="w-[150px] h-[150px] m-[20px] mt-[60px]"
+      className="w-[150px] h-[150px] m-[20px] mt-[40px]"
       reveal={ability * 10} //퍼센트 치수
       lineWidth={14} //도넛 두께
       background="#f3f3f3"

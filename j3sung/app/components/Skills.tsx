@@ -34,14 +34,12 @@ let skill: { img: StaticImageData; name: string; ability: number }[] = [
   { img: bootstrap, name: "Bootstrap", ability: 5 },
   { img: java, name: "java", ability: 7 },
   { img: cpp, name: "C++", ability: 7 },
-  { img: csharp, name: "C#", ability: 5 },
   { img: python, name: "Python", ability: 3 },
   { img: spring, name: "Spring", ability: 5 },
   { img: php, name: "PHP", ability: 3 },
   { img: mysql, name: "MySQL", ability: 8 },
   { img: oracle, name: "Oracle", ability: 7 },
   { img: git, name: "Git", ability: 8 },
-  { img: github, name: "Github", ability: 8 },
 ];
 
 export default function Skills() {
@@ -82,17 +80,18 @@ const SkillCard = (props: skillProps) => {
   // ];
   let { item } = props;
   return (
-    <div className="relative -z-20">
-      <Image
-        src={item.img}
-        className="absolute w-32 h-32 object-fill m-[32px] p-[22px] mt-[72px]"
-        alt={item.name}
-      />
-      <Chart ability={item.ability} />
-      <p className="absolute w-full text-center font-bold text-xl">
-        {item.name} <span className="text-sm text-orange-500">({item.ability}/10)</span>
-      </p>
-      {/* <div className="flex justify-center flex-col content-center w-40 h-40 mx-4 mb-4">
+    <div className="hover:scale-110 duration-500 -z-15">
+      <div className="relative -z-20">
+        <Image
+          src={item.img}
+          className="absolute w-32 h-32 object-fill m-[32px] p-[22px] mt-[10px]"
+          alt={item.name}
+        />
+        <Chart ability={item.ability} />
+        <p className="absolute w-full text-center font-bold text-xl top-[154px]">
+          {item.name} <span className="text-sm text-orange-500">({item.ability}/10)</span>
+        </p>
+        {/* <div className="flex justify-center flex-col content-center w-40 h-40 mx-4 mb-4">
         <p className="text-center font-bold">{item.name}</p>
         <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-[20px]">
           <div
@@ -104,6 +103,7 @@ const SkillCard = (props: skillProps) => {
           </div>
         </div>
       </div> */}
+      </div>
     </div>
   );
 };
