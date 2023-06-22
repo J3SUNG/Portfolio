@@ -59,35 +59,38 @@ export default function Skills() {
   );
 }
 
-type skillProps = {
-  img: StaticImageData;
-  name: string;
-  ability: number;
-};
+interface skillProps {
+  item: {
+    img: StaticImageData;
+    name: string;
+    ability: number;
+  };
+}
 
-const SkillCard = ({ item }: skillProps) => {
-  let x = [
-    "w-[0%]",
-    "w-[10%]",
-    "w-[20%]",
-    "w-[30%]",
-    "w-[40%]",
-    "w-[50%]",
-    "w-[60%]",
-    "w-[70%]",
-    "w-[80%]",
-    "w-[90%]",
-  ];
+const SkillCard = (props: skillProps) => {
+  // let x = [
+  //   "w-[0%]",
+  //   "w-[10%]",
+  //   "w-[20%]",
+  //   "w-[30%]",
+  //   "w-[40%]",
+  //   "w-[50%]",
+  //   "w-[60%]",
+  //   "w-[70%]",
+  //   "w-[80%]",
+  //   "w-[90%]",
+  // ];
+  let { item } = props;
   return (
-    <div className="relative">
+    <div className="relative -z-20">
       <Image
         src={item.img}
-        className="absolute w-40 h-40 object-fill m-[30px] p-[24px] mt-[80px]"
+        className="absolute w-32 h-32 object-fill m-[32px] p-[22px] mt-[72px]"
         alt={item.name}
       />
       <Chart ability={item.ability} />
       <p className="absolute w-full text-center font-bold text-xl">
-        {item.name} <span className="text-orange-400">({item.ability}/10)</span>
+        {item.name} <span className="text-sm text-orange-500">({item.ability}/10)</span>
       </p>
       {/* <div className="flex justify-center flex-col content-center w-40 h-40 mx-4 mb-4">
         <p className="text-center font-bold">{item.name}</p>
