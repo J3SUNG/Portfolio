@@ -23,19 +23,21 @@ export default function Experience() {
     },
   ];
   return (
-    <section className="flex justify-center flex-col w-[1140px] m-auto mt-48 font-Binggrae">
+    <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
       <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left mb-10">Experience</h2>
-      <div className="relative">
+      <div className="relative font-Binggrae -z-20">
         {experience.map((item) => (
-          <div className="flex flex-col my-8 px-8 relative">
+          <div className="flex flex-col my-8 px-8 ml-[10px] relative">
             <p className="font-bold">
               {item.title} <span>({item.date})</span>
             </p>
-            <p className="mt-[10px]">{item.content}</p>
-            <p className="mt-[10px]">{item.content2}</p>
+            <p className="mt-[12px]">
+              <p className="mb-[4px]">{item.content}</p>
+              <p>{item.content2}</p>
+            </p>
             <hr className="mt-[24px]" />
             <Image
-              className="absolute left-[5px] top-[3px] z-10 w-[18px] h-[18px]"
+              className="absolute left-[-5px] top-[3px] z-10 w-[18px] h-[18px]"
               src={triangle}
               alt="point"
             />
