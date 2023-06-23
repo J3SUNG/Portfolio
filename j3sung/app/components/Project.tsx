@@ -59,7 +59,7 @@ export default function Project() {
     <>
       <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
         <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Project</h2>
-        <div className="mt-10 flex item-center justify-center font-Binggrae rounded-lg flex-wrap -z-10">
+        <div className="mt-10 flex item-center justify-center rounded-lg flex-wrap -z-10">
           {projects.map((item) => (
             <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[40px] px-[60px] my-[40px] h-[360px] w-full">
               <Image
@@ -67,15 +67,11 @@ export default function Project() {
                 alt={item.name}
                 className="min-w-[420px] w-[420px] object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black mr-[80px]"
               />
-              <div className="py-[10px]">
+              <div className="py-[20px] font-Binggrae">
                 <h2 className="text-4xl font-bold mb-[20px]">{item.name}</h2>
-                <p className="text-lg mb-[20px]">{item.content}</p>
+                <p className="text-xl mb-[20px]">{item.content}</p>
                 <p className="text-lg mb-[20px]">{item.description}</p>
-                <p className="text-lg w-[440px]">
-                  기술 스택
-                  <br />
-                  {item.skill}
-                </p>
+                <p className="text-lg w-[440px]">{item.skill}</p>
               </div>
               <div className="absolute rounded-full top-[-400px] left-[-500px] -z-10 w-[800px] h-[800px] bg-sky-100 opacity-50"></div>
               <div className="absolute rounded-full top-[200px] right-[-600px] -z-10 w-[800px] h-[800px] bg-yellow-100"></div>
