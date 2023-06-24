@@ -16,7 +16,7 @@ const navigation = [
 export default function Nav() {
   return (
     <>
-      <div className="fixed z-30 w-full">
+      <div className="fixed z-50 w-full">
         <Disclosure as="nav" className="">
           {({ open }) => (
             <>

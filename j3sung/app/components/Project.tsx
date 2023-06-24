@@ -66,7 +66,7 @@ export default function Project() {
     <>
       <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
         <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Project</h2>
-        <div className="mt-10 flex item-center justify-center rounded-lg flex-wrap -z-20">
+        <div className="mt-10 flex item-center justify-center rounded-lg flex-wrap">
           {projects.map((item) => (
             <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[40px] px-[60px] my-[40px] h-[360px] w-full">
               <div className="min-w-[420px] w-[420px] mr-[80px] rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
@@ -75,7 +75,7 @@ export default function Project() {
                   alt={item.name}
                   className="w-full h-full object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
                 />
-                <div className="absolute rounded-3xl bg-sky-900 w-[420px] h-[280px] left-[60px] top-[40px] opacity-0 hover:opacity-90 hover:cursor-pointer">
+                <div className="absolute rounded-3xl bg-sky-900 w-[420px] h-[280px] left-[60px] top-[40px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
                   <Link
                     href={item.url}
                     target="_blank"

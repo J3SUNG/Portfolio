@@ -80,7 +80,7 @@ const SkillCard = (props: skillProps) => {
   // ];
   let { item } = props;
   return (
-    <div className="hover:scale-110 duration-500 -z-15">
+    <div className="hover:scale-110 duration-500 hover:z-0 z-0">
       <div className="relative -z-20">
         <Image
           src={item.img}
