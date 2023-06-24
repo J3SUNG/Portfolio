@@ -28,7 +28,7 @@ export default function Archiving() {
   return (
     <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
       <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Archiving</h2>
-      <div className="flex justify-around mt-[40px]">
+      <div className="flex justify-around mt-[40px] -z-20">
         {items.map((item) => (
           <div className="relative min-w-[480px] min-h-[340px] object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col pl-[30px] text-lg">
             <Link
