@@ -45,7 +45,10 @@ let skill: { img: StaticImageData; name: string; ability: number }[] = [
 export default function Skills() {
   return (
     <>
-      <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
+      <section
+        id="skill"
+        className="flex justify-center flex-col w-[1140px] m-auto mt-[112px] pt-[80px]"
+      >
         <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Skills</h2>
         <div className="flex flex-wrap">
           {skill.map((item) => (

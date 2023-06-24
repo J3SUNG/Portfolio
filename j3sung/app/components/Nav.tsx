@@ -6,11 +6,11 @@ import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "#" },
-  { name: "About me", href: "#" },
-  { name: "Skills", href: "#" },
-  { name: "Experience", href: "#" },
-  { name: "Projects", href: "#" },
-  { name: "Archiving", href: "#" },
+  { name: "About me", href: "#about-me" },
+  { name: "Skills", href: "#skill" },
+  { name: "Experience", href: "#experience" },
+  { name: "Projects", href: "#project" },
+  { name: "Archiving", href: "#archiving" },
 ];
 
 export default function Nav() {
@@ -29,6 +29,7 @@ export default function Nav() {
                           <Link
                             key={item.name}
                             href={item.href}
+                            scroll={false}
                             className={
                               "text-white hover:bg-blue-400 hover:text-white rounded-md px-3 py-2 text-xl font-medium"
                             }

@@ -23,7 +23,10 @@ export default function Experience() {
     },
   ];
   return (
-    <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
+    <section
+      id="experience"
+      className="flex justify-center flex-col w-[1140px] m-auto mt-[112px] pt-[80px]"
+    >
       <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left mb-10">Experience</h2>
       <div className="relative font-Binggrae -z-20">
         {experience.map((item) => (

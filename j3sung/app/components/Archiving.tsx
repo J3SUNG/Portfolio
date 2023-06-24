@@ -26,7 +26,10 @@ let items = [
 
 export default function Archiving() {
   return (
-    <section className="flex justify-center flex-col w-[1140px] m-auto mt-48">
+    <section
+      id="archiving"
+      className="flex justify-center flex-col w-[1140px] m-auto mt-[112px] pt-[80px]"
+    >
       <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Archiving</h2>
       <div className="flex justify-around mt-[40px]">
         {items.map((item) => (
