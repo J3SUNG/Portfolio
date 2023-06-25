@@ -1,8 +1,12 @@
 @import "tailwindcss/tailwind.css";
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @font-face {
   font-family: "DancingScript";
@@ -15,8 +19,12 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    scroll-behavior: smooth;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 :root {

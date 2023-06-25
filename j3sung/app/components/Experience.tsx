@@ -1,5 +1,5 @@
 import Image from "next/image";
-import triangle from "@/public/img/yield.png";
+import triangle from "/public/img/yield.png";
 
 export default function Experience() {
   const experience = [

@@ -1,6 +1,6 @@
 import Image from "next/image";
-import github from "@/public/img/archiving/github.png";
-import tistory from "@/public/img/archiving/tistory.png";
+import github from "/public/img/archiving/github.png";
+import tistory from "/public/img/archiving/tistory.png";
 import Link from "next/link";
 
 let items = [

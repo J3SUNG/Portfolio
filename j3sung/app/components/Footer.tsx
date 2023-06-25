@@ -1,8 +1,8 @@
 import Image from "next/image";
-import githubImg from "@/public/img/logo/github.png";
-import tistoryImg from "@/public/img/logo/tistory.png";
-import kakaoImg from "@/public/img/logo/kakao.png";
-import email from "@/public/img/logo/email.png";
+import githubImg from "/public/img/logo/github.png";
+import tistoryImg from "/public/img/logo/tistory.png";
+import kakaoImg from "/public/img/logo/kakao.png";
+import email from "/public/img/logo/email.png";
 import Link from "next/link";
 
 export default function Footer() {

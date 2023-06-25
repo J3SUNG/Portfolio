@@ -1,9 +1,9 @@
-import nadri from "@/public/img/project/nadri.png";
-import suiteCar from "@/public/img/project/suiteCar.jpg";
-import zigball from "@/public/img/project/zigball.png";
-import noPiano from "@/public/img/project/noPiano.png";
-import enjoyRiding from "@/public/img/project/enjoyRiding.png";
-import shootingGame from "@/public/img/project/shootingGame.jpg";
+import nadri from "/public/img/projects/nadri.png";
+import suiteCar from "/public/img/projects/suiteCar.jpg";
+import zigball from "/public/img/projects/zigball.png";
+import noPiano from "/public/img/projects/noPiano.png";
+import enjoyRiding from "/public/img/projects/enjoyRiding.png";
+import shootingGame from "/public/img/projects/shootingGame.jpg";
 import Image from "next/image";
 import Link from "next/link";
 

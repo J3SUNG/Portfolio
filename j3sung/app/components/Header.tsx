@@ -6,8 +6,10 @@ export default function Header() {
     <div className="relative isolate overflow-hidden bg-gray-900 h-[576px] sm:py-48 z-40">
       <Image
         src={headerImg}
-        alt=""
+        alt="header img"
         className="absolute inset-0 h-full z-20 w-full object-cover object-right md:object-center"
+        width={500}
+        height={500}
       />
       <div className="lg:px-8 flex justify-center">
         <h2 className="absolute top-[190px] text-4xl font-bold tracking-tight text-white sm:text-8xl z-30">
