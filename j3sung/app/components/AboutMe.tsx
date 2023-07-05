@@ -5,16 +5,16 @@ export default function AboutMe() {
   return (
     <section
       id="about-me"
-      className="flex justify-center flex-col w-[1140px] m-auto h-auto mt-[112px] pt-[80px]"
+      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[20px] sm:mt-[112px] sm:pt-[80px] ml-[20px]"
     >
-      <h2 className="text-5xl text-blue-900 sm:text-7xl font-bold text-left">About me</h2>
-      <div className="flex">
+      <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">About me</h2>
+      <div className="sm:flex">
         <div className="flex items-center">
-          <Image src={profileImg} alt="profile image" className="w-[360px] " />
+          <Image src={profileImg} alt="profile image" className="w-[50vw] sm:w-[360px] " />
         </div>
-        <div className="absolute left-0 top-[800px] bg-sky-100 -z-10 w-[34%] h-[550px]"></div>
-        <div className="ml-16 mt-6 font-Binggrae font-bold">
-          <ul className="leading-8">
+        <div className="absolute left-0 top-[338px] sm:top-[800px] bg-sky-100 -z-10 w-[42vw] sm:w-[34%] h-[300px] sm:h-[550px]"></div>
+        <div className="ml-[0px] sm:ml-16 mt-6 font-Binggrae font-bold">
+          <ul className="mt-[10px] sm:mt-0 leading-5 sm:leading-8 text-[6px] sm:text-base">
             <li>이름 : 이제성 (만 28세)</li>
             <li>학력 : 계명대학교 컴퓨터공학전공 졸업 (3.94 / 4.5)</li>
             <li>자격증 : ICDL Start, ITQ OA Master, 전자기기기능사, SQLD</li>
@@ -24,7 +24,7 @@ export default function AboutMe() {
               - 디지털로 만드는 스마트 하우스 <br />
               - 공모전(창의상), 2019 ACM-ICPC 서울대회(Certificate of Achievement) <br />
               - 2019년 학부생 논문 및 캡스톤디자인 경진대회(우수상) <br />
-              - Health-related IoT Tracking Platform Challenge(Outstanding Achievement Award) <br />
+              - Health-related IoT Tracking Platform Challenge(Outstanding Achievement) <br />
               - 1학기 프로젝트 최우수상(최우수상) <br />
             </li>
             <li>경력 : 인투시어 개발부 경력직 (2020.03.26 ~ 2020.08.14)</li>
