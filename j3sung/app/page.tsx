@@ -10,7 +10,7 @@ import Archiving from "./components/Archiving";
 export default function Home() {
   return (
     <>
-      <header className="sticky -top-[500px] z-50">
+      <header className="sm:sticky sm:-top-[500px] sm:z-50">
         <Nav />
         <Header />
       </header>

@@ -84,7 +84,7 @@ export default function Project() {
                     target="_blank"
                     className="text-white text-center w-full h-full flex justify-center items-center"
                   >
-                    <p className="text-xl">GitHub 페이지로 바로가기</p>
+                    <p className="text-xl text-white">GitHub 페이지로 바로가기</p>
                   </Link>
                 </div>
               </div>
