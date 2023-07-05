@@ -45,10 +45,10 @@ export default function Skills() {
     <>
       <section
         id="skill"
-        className="flex justify-center flex-col w-[1140px] m-auto mt-[112px] pt-[80px]"
+        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[20px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
       >
         <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Skills</h2>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap w-[100vw] sm:w-auto">
           {skill.map((item) => (
             <SkillCard item={item} key={item.name} />
           ))}
@@ -81,16 +81,17 @@ const SkillCard = (props: skillProps) => {
   // ];
   let { item } = props;
   return (
-    <div className="hover:scale-110 duration-500 hover:z-0 z-0">
-      <div className="relative -z-20">
+    <div className="hover:scale-110 duration-500 hover:z-0 z-0 mb-[16px] sm:mb-0">
+      <div className="relative -z-20 w-auto">
         <Image
           src={item.img}
-          className="absolute w-32 h-32 object-fill m-[32px] p-[22px] mt-[10px]"
+          className="absolute w-12 h-12 sm:w-32 sm:h-32 object-fill m-[12px] sm:m-[32px] p-[10px] sm:p-[22px] ml-[11px] sm:ml-[32px] mt-[1px] sm:mt-[10px]"
           alt={item.name}
         />
         <Chart ability={item.ability} />
-        <p className="absolute w-full text-center font-bold text-xl top-[154px]">
-          {item.name} <span className="text-sm text-orange-500">({item.ability}/10)</span>
+        <p className="absolute w-full text-center font-bold text-[4px] sm:text-xl top-[50px] sm:top-[154px]">
+          {item.name}{" "}
+          <span className="text-[1px] sm:text-sm text-orange-500">({item.ability}/10)</span>
         </p>
         {/* <div className="flex justify-center flex-col content-center w-40 h-40 mx-4 mb-4">
         <p className="text-center font-bold">{item.name}</p>
