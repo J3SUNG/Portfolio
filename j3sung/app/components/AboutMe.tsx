@@ -24,7 +24,7 @@ export default function AboutMe() {
               - 디지털로 만드는 스마트 하우스 <br />
               - 공모전(창의상), 2019 ACM-ICPC 서울대회(Certificate of Achievement) <br />
               - 2019년 학부생 논문 및 캡스톤디자인 경진대회(우수상) <br />
-              - Health-related IoT Tracking Platform Challenge(Outstanding Achievement) <br />
+              - Health-related IoT Tracking Platform Challenge(Outstanding Award) <br />
               - 1학기 프로젝트 최우수상(최우수상) <br />
             </li>
             <li>경력 : 인투시어 개발부 경력직 (2020.03.26 ~ 2020.08.14)</li>

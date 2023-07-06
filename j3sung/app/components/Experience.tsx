@@ -25,28 +25,30 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="flex justify-center flex-col w-[1140px] m-auto mt-[112px] pt-[80px]"
+      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
     >
-      <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left mb-10">Experience</h2>
+      <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left sm:mb-10">
+        Experience
+      </h2>
       <div className="relative font-Binggrae -z-20">
         {experience.map((item) => (
-          <div className="flex flex-col my-8 px-8 ml-[10px] relative">
-            <p className="font-bold text-xl">
+          <div className="flex flex-col pl-[20px] sm:pl-8 my-8 sm:px-8 ml-0 sm:ml-[10px] relative">
+            <p className="font-bold text-[8px] sm:text-xl">
               {item.title} <span>({item.date})</span>
             </p>
-            <div className="mt-[12px]">
+            <div className="mt-[12px] pl-[4px] sm:pl-0 text-[4px] sm:text-base w-[84vw] sm:w-full whitespace-normal">
               <p className="mb-[4px]">{item.content}</p>
               <p>{item.content2}</p>
             </div>
-            <hr className="mt-[24px]" />
+            <hr className="mt-[24px] w-[84vw] sm:w-full" />
             <Image
-              className="absolute left-[-5px] top-[4px] z-10 w-[18px] h-[18px]"
+              className="absolute left-[-3px] sm:left-[-5px] top-[4px] z-10 w-[9px] sm:w-[18px] h-[9px] sm:h-[18px]"
               src={triangle}
               alt="point"
             />
           </div>
         ))}
-        <div className="absolute bg-sky-200 top-[0px] left-[10px] w-[6px] h-[480px]"></div>
+        <div className="absolute bg-sky-200 top-[20px] sm:top-[0px] sm:left-[10px] w-[3px] sm:w-[6px] h-[440px] sm:h-[480px]"></div>
       </div>
     </section>
   );
