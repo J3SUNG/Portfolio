@@ -78,7 +78,7 @@ export default function Project() {
                   alt={item.name}
                   className="w-full h-[200px] sm:h-full object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
                 />
-                <div className="absolute rounded-3xl bg-sky-900 min-w-[85vw] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[60px] top-[16px] sm:top-[40px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
+                <div className="absolute rounded-3xl bg-sky-900 min-w-[85vw] sm:min-w-[420px] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[60px] top-[16px] sm:top-[40px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
                   <Link
                     href={item.url}
                     target="_blank"
