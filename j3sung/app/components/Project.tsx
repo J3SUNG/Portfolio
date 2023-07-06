@@ -14,7 +14,7 @@ export default function Project() {
       img: nadri,
       content: "지역별 관광 데이터를 활용한 여행 정보 사이트 ",
       description: "여행 정보, 여행 계획, 커뮤니티, 회원가입, 통계 등의 기능을 제공",
-      skill: "Vue, eamiljs, cheerio, vue-charjs, Spring Boot, MyBatis, MySQL",
+      skill: "Vue, eamiljs, cheerio, vue-charjs, Spring, MyBatis, MySQL",
       url: "https://github.com/J3SUNG/Nadri",
     },
     {
@@ -66,36 +66,40 @@ export default function Project() {
     <>
       <section
         id="project"
-        className="flex justify-center flex-col w-[1140px] m-auto mt-[112px] pt-[80px]"
+        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
       >
         <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Project</h2>
-        <div className="mt-10 flex item-center justify-center rounded-lg flex-wrap">
+        <div className="sm:mt-10 flex item-center sm:justify-center rounded-lg flex-wrap w-[93vw] sm:w-auto">
           {projects.map((item) => (
-            <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[40px] px-[60px] my-[40px] h-[360px] w-full">
-              <div className="min-w-[420px] w-[420px] mr-[80px] rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
+            <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[60px] my-[20px] sm:my-[40px] h-[360px] w-full flex-wrap sm:flex-nowrap">
+              <div className="min-w-[85vw] sm:min-w-[420px] sm:w-[420px] sm:mr-[80px] rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
                 <Image
                   src={item.img}
                   alt={item.name}
-                  className="w-full h-full object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+                  className="w-full h-[200px] sm:h-full object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
                 />
-                <div className="absolute rounded-3xl bg-sky-900 w-[420px] h-[280px] left-[60px] top-[40px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
+                <div className="absolute rounded-3xl bg-sky-900 min-w-[85vw] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[60px] top-[16px] sm:top-[40px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
                   <Link
                     href={item.url}
                     target="_blank"
                     className="text-white text-center w-full h-full flex justify-center items-center"
                   >
-                    <p className="text-xl text-white">GitHub 페이지로 바로가기</p>
+                    <p className="text-sm sm:text-xl text-white">GitHub 페이지로 바로가기</p>
                   </Link>
                 </div>
               </div>
               <div className="py-[20px] font-Binggrae">
-                <h2 className="text-4xl font-bold mb-[20px]">{item.name}</h2>
-                <p className="text-xl mb-[20px]">{item.content}</p>
-                <p className="text-lg mb-[20px]">{item.description}</p>
-                <p className="text-lg w-[440px]">{item.skill}</p>
+                <h2 className="text-[14px] sm:text-4xl font-bold mb-[10px] sm:mb-[20px]">
+                  {item.name}
+                </h2>
+                <p className="text-[12px] sm:text-xl mb-[8px] sm:mb-[20px]">{item.content}</p>
+                <p className="text-[10px] sm:text-lg mb-[4px] sm:mb-[20px] w-[74%]">
+                  {item.description}
+                </p>
+                <p className="text-[10px] sm:text-lg w-[440px]">{item.skill}</p>
               </div>
-              <div className="absolute rounded-full top-[-400px] left-[-500px] -z-10 w-[800px] h-[800px] bg-sky-100 opacity-50"></div>
-              <div className="absolute rounded-full top-[200px] right-[-600px] -z-10 w-[800px] h-[800px] bg-yellow-100"></div>
+              <div className="absolute rounded-full top-[-570px] sm:top-[-400px] left-[-500px] sm:left-[-500px] -z-10 w-[800px] h-[800px] bg-sky-100 opacity-50"></div>
+              <div className="absolute rounded-full top-[200px] right-[-660px] sm:right-[-600px] -z-10 w-[800px] h-[800px] bg-yellow-100"></div>
             </div>
           ))}
         </div>

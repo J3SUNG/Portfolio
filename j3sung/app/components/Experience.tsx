@@ -48,7 +48,7 @@ export default function Experience() {
             />
           </div>
         ))}
-        <div className="absolute bg-sky-200 top-[20px] sm:top-[0px] sm:left-[10px] w-[3px] sm:w-[6px] h-[440px] sm:h-[480px]"></div>
+        <div className="absolute bg-sky-200 top-[20px] sm:top-[0px] sm:left-[10px] w-[3px] sm:w-[6px] h-[450px] sm:h-[480px]"></div>
       </div>
     </section>
   );
