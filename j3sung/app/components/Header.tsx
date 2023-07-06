@@ -7,7 +7,7 @@ export default function Header() {
       <Image
         src={headerImg}
         alt="header img"
-        className="absolute inset-0 z-20 w-full object-cover object-right h-full"
+        className="absolute top-0 z-20 w-full object-cover object-right h-full"
         width={500}
         height={500}
       />

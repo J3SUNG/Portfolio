@@ -20,7 +20,7 @@ export default function Nav() {
           {({ open }) => (
             <>
               <div className="mx-auto max-w-7xl px-4">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-[76px] items-center justify-between">
                   <div className="flex items-center w-full">
                     <div className="hidden sm:block w-full">
                       <div className="flex items-center justify-center space-x-8 w-full">
