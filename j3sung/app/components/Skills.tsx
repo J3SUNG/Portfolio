@@ -89,9 +89,9 @@ const SkillCard = (props: skillProps) => {
           alt={item.name}
         />
         <Chart ability={item.ability} />
-        <p className="absolute w-full text-center font-bold text-[4px] sm:text-xl top-[50px] sm:top-[154px]">
+        <p className="absolute w-full text-center font-bold text-[10px] sm:text-xl top-[50px] sm:top-[154px]">
           {item.name}{" "}
-          <span className="text-[1px] sm:text-sm text-orange-500">({item.ability}/10)</span>
+          <span className="text-[10px] sm:text-sm text-orange-500">({item.ability}/10)</span>
         </p>
         {/* <div className="flex justify-center flex-col content-center w-40 h-40 mx-4 mb-4">
         <p className="text-center font-bold">{item.name}</p>
