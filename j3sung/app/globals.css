@@ -25,6 +25,9 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+  over-flow-x: hidden;
 }
 
 p,
@@ -56,4 +59,5 @@ body {
   color: rgb(var(--foreground-rgb));
   max-width: 100%;
   overflow-x: hidden;
+  over-flow-x: hidden;
 }

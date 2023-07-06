@@ -40,7 +40,7 @@ export default function Nav() {
                   </div>
                   <div className="-mr-2 flex sm:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 opacity-80">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
                         <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -52,15 +52,15 @@ export default function Nav() {
                 </div>
               </div>
 
-              <Disclosure.Panel className="xl:hidden">
-                <div className="space-y-1 px-2 pb-3 pt-2 xl:px-3">
+              <Disclosure.Panel className="xl:hidden flex justify-end">
+                <div className="space-y-1 px-2 pb-3 pt-2 xl:px-3 flex flex-wrap w-[40vw]">
                   {navigation.map((item) => (
                     <Disclosure.Button
                       key={item.name}
                       as="a"
                       href={item.href}
                       className={
-                        "text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                        "w-[200px] text-yellow-400 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium text-right"
                       }
                     >
                       {item.name}
