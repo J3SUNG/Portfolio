@@ -33,7 +33,7 @@ export default function Experience() {
       <div className="relative font-Binggrae -z-20">
         {experience.map((item) => (
           <div className="flex flex-col pl-[20px] sm:pl-8 my-8 sm:px-8 ml-0 sm:ml-[10px] relative">
-            <p className="font-bold text-[8px] sm:text-xl">
+            <p className="font-bold text-[10px] sm:text-xl">
               {item.title} <span>({item.date})</span>
             </p>
             <div className="mt-[12px] pl-[4px] sm:pl-0 text-[10px] sm:text-base w-[84vw] sm:w-full whitespace-normal">
