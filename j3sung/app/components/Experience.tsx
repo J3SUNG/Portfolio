@@ -36,7 +36,7 @@ export default function Experience() {
             <p className="font-bold text-[8px] sm:text-xl">
               {item.title} <span>({item.date})</span>
             </p>
-            <div className="mt-[12px] pl-[4px] sm:pl-0 text-[4px] sm:text-base w-[84vw] sm:w-full whitespace-normal">
+            <div className="mt-[12px] pl-[4px] sm:pl-0 text-[10px] sm:text-base w-[84vw] sm:w-full whitespace-normal">
               <p className="mb-[4px]">{item.content}</p>
               <p>{item.content2}</p>
             </div>
