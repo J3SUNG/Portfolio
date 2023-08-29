@@ -30,15 +30,15 @@ export default function Archiving() {
       id="archiving"
       className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
     >
-      <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Archiving</h2>
-      <div className="flex justify-around mt-[40px] flex-wrap sm:flex-nowrap w-[93vw] sm:w-full">
+      <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Archiving</h2>
+      <div className="flex justify-around my-[40px] flex-wrap sm:flex-nowrap w-[93vw] sm:w-full">
         {items.map((item) => (
           <div className="relative w-full sm:w-auto sm:min-w-[480px] sm:min-h-[340px] object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col pb-[30px] sm:pb-[0px] pl-[30px] text-lg hover:animate-wiggle overflow-hidden mb-[20px] sm:mb-[0px]">
             <div className="absolute top-[-60px] right-[30px] w-[20px] sm:w-[30px] h-[200px] bg-sky-200 -rotate-45"></div>
             <Link
               href={item.url}
               target="_blank"
-              className="absolute left-0 w-full h-full bg-black rounded-3xl opacity-0"
+              className="absolute left-0 w-full h-full bg-black opacity-0 rounded-3xl"
             >
               {item.url}
             </Link>
