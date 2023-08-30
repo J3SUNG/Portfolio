@@ -20,15 +20,15 @@ import Image, { StaticImageData } from "next/image";
 import Chart from "./Chart";
 
 let skill: { img: StaticImageData; name: string; ability: number }[] = [
+  { img: react, name: "React", ability: 7 },
+  { img: vue, name: "Vue", ability: 5 },
+  { img: javascript, name: "Javascript", ability: 7 },
+  { img: typescript, name: "Typescript", ability: 5 },
+  { img: tailwind, name: "Tailwind", ability: 7 },
+  { img: nextjs, name: "Nextjs", ability: 3 },
   { img: html, name: "HTML", ability: 6 },
   { img: css, name: "CSS", ability: 6 },
-  { img: javascript, name: "Javascript", ability: 6 },
-  { img: react, name: "React", ability: 5 },
-  { img: vue, name: "Vue", ability: 4 },
-  { img: typescript, name: "Typescript", ability: 3 },
-  { img: nextjs, name: "Nextjs", ability: 4 },
-  { img: tailwind, name: "Tailwind", ability: 4 },
-  { img: scss, name: "SCSS", ability: 3 },
+  { img: scss, name: "SCSS", ability: 4 },
   { img: bootstrap, name: "Bootstrap", ability: 3 },
   { img: java, name: "java", ability: 5 },
   { img: cpp, name: "C++", ability: 5 },
