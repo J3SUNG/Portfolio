@@ -6,7 +6,7 @@ export default function Experience() {
     {
       date: "2020-03-26 ~ 2020-08-14",
       title: "인투시어 (경력 개발부)",
-      content: `nodejs와 redis를 사용해서 회원 가입 및 로그인 솔루션 제작에 백엔드 개발로 참여`,
+      content: `React와 Nodejs를 사용해서 회원 가입 및 로그인 솔루션 제작에 참여`,
       content2: `필요한 기능에 대해 설계를 작성한 후 해당 설계를 바탕으로 기능을 구현하였으며 TDD(테스트 주도 개발) 방식을 사용`,
     },
     {
@@ -27,7 +27,7 @@ export default function Experience() {
       id="experience"
       className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
     >
-      <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left sm:mb-10">
+      <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl sm:mb-10">
         Experience
       </h2>
       <div className="relative font-Binggrae -z-20">
