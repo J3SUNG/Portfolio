@@ -2,13 +2,20 @@ import nadri from "/public/img/projects/nadri.png";
 import suiteCar from "/public/img/projects/suiteCar.jpg";
 import zigball from "/public/img/projects/zigball.png";
 import noPiano from "/public/img/projects/noPiano.png";
-import enjoyRiding from "/public/img/projects/enjoyRiding.png";
-import shootingGame from "/public/img/projects/shootingGame.jpg";
+import whosTheZARA from "/public/img/projects/WhosTheZARA.png";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Project() {
   let projects = [
+    {
+      name: "Who's The ZARA",
+      img: whosTheZARA,
+      content: "별주부전 컨셉의 마피아 게임 개발",
+      description: "WEB RTC를 활용해 실시간 화상채팅이 가능한 마피아게임 개발",
+      skill: "React, TypeScript, Tailwind, Spring Boot, Git, Jira",
+      url: "https://github.com/J3SUNG/Who-s-The-ZARA",
+    },
     {
       name: "나들이",
       img: nadri,
@@ -43,23 +50,6 @@ export default function Project() {
       skill: "OpenCV, Java, C++",
       url: "https://github.com/J3SUNG/No-Piano",
     },
-    {
-      name: "Enjoy Riding",
-      img: enjoyRiding,
-      content: "차량 렌트 시스템 개발",
-      description:
-        "차량 렌트 및 반납, 렌트 관리, 리뷰 작성 및 수정, 유저 관리, 차량 관리, 렌트 기록, 통계",
-      skill: "C#, MySQL",
-      url: "https://github.com/J3SUNG/Enjoy-Riding",
-    },
-    {
-      name: "대학교에서 살아남기",
-      img: shootingGame,
-      content: "탄막 슈팅 게임",
-      description: "대학생이 되어 다가온 유혹들을 이겨내고 대학생활을 무사히 마치는 여정",
-      skill: "Java",
-      url: "https://github.com/J3SUNG/Surviving-University-Life-Game",
-    },
   ];
 
   return (
@@ -68,7 +58,7 @@ export default function Project() {
         id="project"
         className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
       >
-        <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">Project</h2>
+        <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Project</h2>
         <div className="sm:mt-10 flex item-center sm:justify-center rounded-lg flex-wrap w-[93vw] sm:w-auto">
           {projects.map((item) => (
             <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[60px] my-[20px] sm:my-[40px] h-[360px] w-full flex-wrap sm:flex-nowrap">
@@ -82,9 +72,9 @@ export default function Project() {
                   <Link
                     href={item.url}
                     target="_blank"
-                    className="text-white text-center w-full h-full flex justify-center items-center"
+                    className="flex items-center justify-center w-full h-full text-center text-white"
                   >
-                    <p className="text-sm sm:text-xl text-white">GitHub 페이지로 바로가기</p>
+                    <p className="text-sm text-white sm:text-xl">GitHub 페이지로 바로가기</p>
                   </Link>
                 </div>
               </div>
