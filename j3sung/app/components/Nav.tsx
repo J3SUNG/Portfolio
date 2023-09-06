@@ -15,21 +15,21 @@ const navigation = [
 export default function Nav() {
   return (
     <>
-      <div className="fixed z-50 w-full">
+      <div className="fixed z-50 w-full sm:bg-white sm:shadow-xl">
         <Disclosure as="nav" className="">
           {({ open }) => (
             <>
-              <div className="mx-auto max-w-7xl px-4">
+              <div className="px-4 mx-auto max-w-7xl">
                 <div className="flex h-[76px] items-center justify-between">
                   <div className="flex items-center w-full">
-                    <div className="hidden sm:block w-full">
-                      <div className="flex items-center justify-center space-x-8 w-full">
+                    <div className="hidden w-full sm:block">
+                      <div className="flex items-center justify-center w-full space-x-8">
                         {navigation.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
                             className={
-                              "text-white hover:bg-blue-400 hover:text-white rounded-md px-3 py-2 text-xl font-medium"
+                              "sm:text-blue-600 text-white hover:bg-blue-400 hover:text-white rounded-md px-3 py-2 text-xl font-medium"
                             }
                           >
                             {item.name}
@@ -38,21 +38,21 @@ export default function Nav() {
                       </div>
                     </div>
                   </div>
-                  <div className="-mr-2 flex sm:hidden">
+                  <div className="flex -mr-2 sm:hidden">
                     {/* Mobile menu button */}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 opacity-80">
+                    <Disclosure.Button className="inline-flex items-center justify-center p-2 text-white bg-gray-800 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 opacity-80">
                       <span className="sr-only">Open main menu</span>
                       {open ? (
-                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                        <XMarkIcon className="block w-6 h-6" aria-hidden="true" />
                       ) : (
-                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon className="block w-6 h-6" aria-hidden="true" />
                       )}
                     </Disclosure.Button>
                   </div>
                 </div>
               </div>
 
-              <Disclosure.Panel className="xl:hidden flex justify-end">
+              <Disclosure.Panel className="flex justify-end xl:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2 xl:px-3 flex flex-wrap w-[40vw]">
                   {navigation.map((item) => (
                     <Disclosure.Button

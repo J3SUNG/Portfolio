@@ -7,16 +7,16 @@ export default function Header() {
       <Image
         src={headerImg}
         alt="header img"
-        className="absolute top-0 z-20 w-full object-cover object-right h-full"
+        className="absolute top-0 z-20 object-cover object-right w-full h-full"
         width={500}
         height={500}
       />
       <div className="flex justify-center px-8">
-        <h2 className="absolute top-[100px] sm:top-[190px] text-4xl font-bold tracking-tight text-white z-30 text-4xl sm:text-8xl">
+        <h2 className="absolute top-[100px] sm:top-[190px] font-bold tracking-tight text-white z-30 text-4xl sm:text-8xl">
           WEB
           <br />
           DEVELOPER
-          <p className="animate-blink inline ml-4 z-30 text-white">_</p>
+          <p className="z-30 inline ml-4 text-white animate-blink">_</p>
         </h2>
         <p className="absolute top-[26px] sm:top-[130px] ml-[60px] sm:ml-[160px] mt-20 text-2xl sm:text-6xl italic font-DancingScript text-yellow-300 z-30">
           Jeseong Lee
