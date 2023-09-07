@@ -33,23 +33,6 @@ export default function Project() {
       skill: "JavaScript, PHP, MySQL Slim, BootStrap, Kotlin, C",
       url: "https://github.com/J3SUNG/Suite-Car",
     },
-    {
-      name: "Zigball",
-      img: zigball,
-      content: "스마트 스위치 개발",
-      description:
-        "기기를 전등스위치에 부착하고 어플리케이션을 통해서 위치를 조작해서 스위치를 조작하는 앱과 기기를 개발",
-      skill: "Java, C++",
-      url: "https://github.com/J3SUNG/Zigball",
-    },
-    {
-      name: "No Piano",
-      img: noPiano,
-      content: "영상처리를 활용한 피아노 장갑 개발",
-      description: "피아노 없이 카메라와 장갑을 이용해서 피아노를 연주",
-      skill: "OpenCV, Java, C++",
-      url: "https://github.com/J3SUNG/No-Piano",
-    },
   ];
 
   return (
