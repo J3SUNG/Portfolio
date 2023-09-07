@@ -4,10 +4,10 @@ import triangle from "/public/img/yield.png";
 export default function Experience() {
   const experience = [
     {
-      date: "2020-03-26 ~ 2020-08-14",
-      title: "인투시어 (경력 개발부)",
-      content: `React와 Nodejs를 사용해서 회원 가입 및 로그인 솔루션 제작에 참여`,
-      content2: `필요한 기능에 대해 설계를 작성한 후 해당 설계를 바탕으로 기능을 구현하였으며 TDD(테스트 주도 개발) 방식을 사용`,
+      date: "2023-01-04 ~ 2023-05-26",
+      title: "삼성 청년 SW 아카데미 1학기",
+      content: `Java, Database, Spring Boot, Vuejs, Algorithm에 대해서 교육을 받음`,
+      content2: `공공 데이터를 활용해서 사용자에게 관광지에 대한 유용한 정보를 제공할 수 있는 사이트 개발, '1학기 프로젝트 최우수상'을 수상`,
     },
     {
       date: "2020-09-15 ~ 2021-06-30",
@@ -16,10 +16,10 @@ export default function Experience() {
       content2: `웹사이트를 개발하고, 센서 데이터들을 웹사이트에 시각화하는 파트를 맡아 프로젝트를 진행`,
     },
     {
-      date: "2023-01-04 ~ 2023-05-26",
-      title: "삼성 청년 SW 아카데미 1학기",
-      content: `Java, Database, Spring Boot, Vuejs, Algorithm에 대해서 교육을 받음`,
-      content2: `공공 데이터를 활용해서 사용자에게 관광지에 대한 유용한 정보를 제공할 수 있는 사이트 개발, '1학기 프로젝트 최우수상'을 수상`,
+      date: "2020-03-26 ~ 2020-08-14",
+      title: "인투시어 (경력 개발부)",
+      content: `React와 Nodejs를 사용해서 회원 가입 및 로그인 솔루션 제작에 참여`,
+      content2: `필요한 기능에 대해 설계를 작성한 후 해당 설계를 바탕으로 기능을 구현하였으며 TDD(테스트 주도 개발) 방식을 사용`,
     },
   ];
   return (
