@@ -29,7 +29,7 @@ export default function Nav() {
                             key={item.name}
                             href={item.href}
                             className={
-                              "sm:text-blue-600 text-white hover:bg-blue-400 hover:text-white rounded-md px-3 py-2 text-xl font-medium"
+                              "sm:text-blue-900 text-white hover:bg-blue-400 hover:text-white rounded-md px-3 py-2 text-xl font-bold"
                             }
                           >
                             {item.name}
