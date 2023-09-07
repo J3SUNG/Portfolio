@@ -13,7 +13,7 @@ export default function Project() {
       img: whosTheZARA,
       content: "별주부전 컨셉의 마피아 게임 개발",
       description: "WEB RTC를 활용해 실시간 화상채팅이 가능한 마피아게임 개발",
-      skill: "React, TypeScript, Tailwind, Spring Boot, Git, Jira",
+      skill: "React, TypeScript, Tailwind, Git, Jira",
       url: "https://github.com/J3SUNG/Who-s-The-ZARA",
     },
     {
@@ -21,7 +21,7 @@ export default function Project() {
       img: nadri,
       content: "지역별 관광 데이터를 활용한 여행 정보 사이트 ",
       description: "여행 정보, 여행 계획, 커뮤니티, 회원가입, 통계 등의 기능을 제공",
-      skill: "Vue, eamiljs, cheerio, vue-charjs, Spring, MyBatis, MySQL",
+      skill: "Vue, eamiljs, cheerio, vue-charjs",
       url: "https://github.com/J3SUNG/Nadri",
     },
     {
@@ -30,7 +30,7 @@ export default function Project() {
       content: "차량 운전 도우미",
       description:
         "차량에 센서를 부착해서 해당 데이터를 앱으로 받아 AI를 통해 센서 데이터를 정밀화하고 이를 앱과 웹에서 시각화",
-      skill: "JavaScript, PHP, MySQL Slim, BootStrap, Kotlin, C",
+      skill: "JavaScript, PHP, MySQL Slim, BootStrap",
       url: "https://github.com/J3SUNG/Suite-Car",
     },
   ];
