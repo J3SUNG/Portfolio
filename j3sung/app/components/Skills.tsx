@@ -16,28 +16,30 @@ import python from "/public/img/skill/python.png";
 import scss from "/public/img/skill/scss.png";
 import spring from "/public/img/skill/spring.png";
 import tailwind from "/public/img/skill/tailwind.png";
+import jira from "/public/img/skill/jira.png";
+import nodejs from "/public/img/skill/nodejs.png";
 import Image, { StaticImageData } from "next/image";
 import Chart from "./Chart";
 
-let skill: { img: StaticImageData; name: string; ability: number }[] = [
-  { img: react, name: "React", ability: 7 },
-  { img: vue, name: "Vue", ability: 5 },
-  { img: javascript, name: "Javascript", ability: 7 },
-  { img: typescript, name: "Typescript", ability: 5 },
-  { img: tailwind, name: "Tailwind", ability: 7 },
-  { img: nextjs, name: "Nextjs", ability: 3 },
-  { img: html, name: "HTML", ability: 6 },
-  { img: css, name: "CSS", ability: 6 },
-  { img: scss, name: "SCSS", ability: 4 },
-  { img: bootstrap, name: "Bootstrap", ability: 3 },
-  { img: java, name: "java", ability: 5 },
-  { img: cpp, name: "C++", ability: 5 },
-  { img: python, name: "Python", ability: 2 },
-  { img: spring, name: "Spring", ability: 3 },
-  { img: php, name: "PHP", ability: 2 },
-  { img: mysql, name: "MySQL", ability: 6 },
-  { img: oracle, name: "Oracle", ability: 5 },
-  { img: git, name: "Git", ability: 6 },
+let skill: { img: StaticImageData; name: string; ability: number; type: number }[] = [
+  { img: react, name: "React", ability: 7, type: 1 },
+  { img: vue, name: "Vue", ability: 5, type: 1 },
+  { img: nextjs, name: "Nextjs", ability: 3, type: 1 },
+  { img: javascript, name: "Javascript", ability: 7, type: 2 },
+  { img: typescript, name: "Typescript", ability: 5, type: 2 },
+  { img: html, name: "HTML", ability: 7, type: 2 },
+  { img: tailwind, name: "Tailwind", ability: 7, type: 3 },
+  { img: css, name: "CSS", ability: 7, type: 3 },
+  { img: scss, name: "SCSS", ability: 4, type: 3 },
+  { img: bootstrap, name: "Bootstrap", ability: 3, type: 3 },
+  { img: spring, name: "Spring", ability: 4, type: 5 },
+  { img: nodejs, name: "Nodejs", ability: 3, type: 5 },
+  { img: java, name: "java", ability: 5, type: 4 },
+  { img: cpp, name: "C++", ability: 5, type: 4 },
+  { img: mysql, name: "MySQL", ability: 6, type: 6 },
+  { img: oracle, name: "Oracle", ability: 5, type: 6 },
+  { img: git, name: "Git", ability: 6, type: 7 },
+  { img: jira, name: "Jira", ability: 4, type: 7 },
 ];
 
 export default function Skills() {
@@ -63,22 +65,11 @@ interface skillProps {
     img: StaticImageData;
     name: string;
     ability: number;
+    type: number;
   };
 }
 
 const SkillCard = (props: skillProps) => {
-  // let x = [
-  //   "w-[0%]",
-  //   "w-[10%]",
-  //   "w-[20%]",
-  //   "w-[30%]",
-  //   "w-[40%]",
-  //   "w-[50%]",
-  //   "w-[60%]",
-  //   "w-[70%]",
-  //   "w-[80%]",
-  //   "w-[90%]",
-  // ];
   let { item } = props;
   return (
     <div className="hover:scale-110 duration-500 hover:z-0 z-0 mb-[16px] sm:mb-0">
@@ -88,23 +79,11 @@ const SkillCard = (props: skillProps) => {
           className="absolute w-12 h-12 sm:w-32 sm:h-32 object-fill m-[12px] sm:m-[32px] p-[10px] sm:p-[22px] ml-[11px] sm:ml-[32px] mt-[1px] sm:mt-[10px]"
           alt={item.name}
         />
-        <Chart ability={item.ability} />
-        <p className="absolute w-full text-center font-bold text-[10px] sm:text-xl top-[50px] sm:top-[154px]">
+        <Chart ability={item.ability} type={item.type} />
+        <p className="absolute w-full text-center font-bold text-[10px] sm:text-[16px] top-[50px] sm:top-[154px]">
           {item.name}{" "}
-          <span className="text-[10px] sm:text-sm text-orange-500">({item.ability}/10)</span>
+          <span className="text-[10px] sm:text-[16px] text-orange-500">({item.ability}/10)</span>
         </p>
-        {/* <div className="flex flex-col content-center justify-center w-40 h-40 mx-4 mb-4">
-        <p className="font-bold text-center">{item.name}</p>
-        <div className="w-full bg-gray-200 rounded-full dark:bg-gray-700 mt-[20px]">
-          <div
-            className={`bg-blue-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full ${
-              x[item.ability]
-            }`}
-          >
-            {item.ability} / 10
-          </div>
-        </div>
-      </div> */}
       </div>
     </div>
   );

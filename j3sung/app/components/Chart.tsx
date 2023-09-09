@@ -3,22 +3,20 @@ import { PieChart } from "react-minimal-pie-chart";
 
 interface propsType {
   ability: number;
+  type: number;
 }
 
 const Chart = (props: propsType) => {
-  let { ability } = props;
+  let { ability, type } = props;
   let backColor = [
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1 ",
-    "#525FE1 ",
-    "#525FE1 ",
-    "#525FE1 ",
+    "",
+    "#6C9EFF",
+    "#FFB466",
+    "#FFEA52",
+    "#CB76FF",
+    "#71FF87",
+    "#51F1FF ",
+    "#FF8989",
   ];
   return (
     <div className="-rotate-90 ">
@@ -26,7 +24,7 @@ const Chart = (props: propsType) => {
         data={[
           {
             value: ability * 10,
-            color: backColor[ability],
+            color: backColor[1],
             name: "name1",
           },
         ]}

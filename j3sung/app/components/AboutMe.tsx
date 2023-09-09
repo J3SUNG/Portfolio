@@ -17,7 +17,7 @@ export default function AboutMe() {
           <ul className="mt-[10px] sm:mt-0 leading-5 sm:leading-8 text-[8px] sm:text-base">
             <li>이름 : 이제성 (만 28세)</li>
             <li>학력 : 계명대학교 컴퓨터공학전공 졸업 (3.94 / 4.5)</li>
-            <li>자격증 : ICDL Start, ITQ OA Master, 전자기기기능사, SQLD</li>
+            <li>자격증 : SQLD, 전자기기기능사, ICDL Start, ITQ OA Master</li>
             <li>
               수상 : <br />
               - SSAFY 공통 프로젝트 우수상(구미 2반 1등) <br />
