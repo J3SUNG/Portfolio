@@ -5,14 +5,14 @@ export default function AboutMe() {
   return (
     <section
       id="about-me"
-      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[20px] sm:mt-[100px] ml-[14px]"
+      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[20px] sm:pt-[120px] ml-[14px]"
     >
       <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">About me</h2>
       <div className="sm:flex">
         <div className="flex items-center">
           <Image src={profileImg} alt="profile image" className="w-[50vw] sm:w-[360px] " />
         </div>
-        <div className="absolute left-0 top-[338px] sm:top-[760px] bg-sky-100 -z-10 w-[42vw] sm:w-[34%] h-[300px] sm:h-[540px]"></div>
+        <div className="absolute left-0 top-[338px] sm:top-[780px] bg-sky-100 -z-10 w-[42vw] sm:w-[34%] h-[300px] sm:h-[540px]"></div>
         <div className="ml-[0px] sm:ml-16 mt-6 font-Binggrae font-bold">
           <ul className="mt-[10px] sm:mt-0 leading-5 sm:leading-8 text-[8px] sm:text-[18px]">
             <li>이름 : 이제성 (만 28세)</li>

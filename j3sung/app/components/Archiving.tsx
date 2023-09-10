@@ -28,7 +28,7 @@ export default function Archiving() {
   return (
     <section
       id="archiving"
-      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[60px] sm:pt-[80px] ml-[14px]"
+      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:pt-[120px] ml-[14px]"
     >
       <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Archiving</h2>
       <div className="flex justify-around my-[40px] flex-wrap sm:flex-nowrap w-[93vw] sm:w-full">

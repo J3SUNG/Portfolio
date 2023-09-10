@@ -71,7 +71,7 @@ export default function Awards() {
   return (
     <section
       id="awards"
-      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[20px] sm:mt-[100px] ml-[14px]"
+      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[20px] sm:pt-[120px] ml-[14px]"
     >
       <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Awards</h2>
       <div className="flex-wrap sm:flex mt-[40px] justify-center">

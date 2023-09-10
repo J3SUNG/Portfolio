@@ -101,12 +101,12 @@ export default function Project() {
     <>
       <section
         id="project"
-        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[140px] ml-[14px]"
+        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:pt-[120px] ml-[14px]"
       >
         <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Project</h2>
-        <div className="sm:mt-10 flex item-center sm:justify-center rounded-lg flex-wrap w-[93vw] sm:w-auto">
+        <div className="sm:mt-10 flex item-center sm:justify-center flex-wrap w-[93vw] sm:w-auto">
           {projects.map((item) => (
-            <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[40px] my-[20px] sm:my-[40px] h-[800px] w-full flex-wrap sm:flex-nowrap">
+            <div className="relative overflow-hidden flex shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[40px] my-[20px] sm:my-[40px] h-[860px] w-full flex-wrap sm:flex-nowrap rounded-md">
               <div className="py-[10px] font-Binggrae flex flex-col justify-between">
                 <h2 className="text-[14px] sm:text-5xl font-bold mb-[10px] sm:mb-[20px]">
                   {item.name}
@@ -123,13 +123,13 @@ export default function Project() {
                   <h3 className="text-[14px] sm:text-2xl font-bold">팀원</h3>
                   <p className="text-[10px] sm:text-lg w-[440px]">{item.team}</p>
                 </div>
-                <div className="min-w-[85vw] sm:min-w-[420px] sm:w-[420px] max-h-[280px] min-h-[280px] sm:mr-[80px] rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
+                <div className="min-w-[85vw] sm:min-w-[420px] sm:w-[420px] max-h-[280px] min-h-[280px] sm:mr-[80px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
                   <Image
                     src={item.img}
                     alt={item.name}
-                    className="w-full h-[200px] sm:h-full object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
+                    className="w-full h-[200px] sm:h-full object-fill shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
                   />
-                  <div className="absolute rounded-3xl bg-sky-900 min-w-[85vw] sm:min-w-[420px] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[40px] top-[16px] sm:top-[470px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
+                  <div className="absolute bg-sky-800 min-w-[85vw] sm:min-w-[420px] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[40px] top-[16px] sm:top-[530px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
                     <Link
                       href={item.url}
                       target="_blank"
@@ -140,7 +140,7 @@ export default function Project() {
                   </div>
                 </div>
               </div>
-              <div className="py-[10px] font-Binggrae flex flex-col justify-around ml-[20px] w-full items-center">
+              <div className="py-[10px] font-Binggrae flex flex-col justify-around ml-[20px] w-full items-center leading-8">
                 <div>
                   <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">주요기능</h3>
                   {item.description.map((descriptionItem) => (
@@ -160,8 +160,6 @@ export default function Project() {
                   ))}
                 </div>
               </div>
-              <div className="absolute rounded-full top-[-570px] sm:top-[-600px] left-[-500px] sm:left-[-660px] -z-10 w-[800px] h-[800px] bg-sky-100 opacity-50"></div>
-              <div className="absolute rounded-full top-[500px] right-[-660px] sm:right-[-600px] -z-10 w-[800px] h-[800px] bg-yellow-100"></div>
             </div>
           ))}
         </div>

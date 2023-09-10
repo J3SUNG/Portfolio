@@ -7,6 +7,7 @@ const navigation = [
   { name: "Home", href: "#" },
   { name: "About me", href: "#about-me" },
   { name: "Skills", href: "#skill" },
+  { name: "Awards", href: "#awards" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#project" },
   { name: "Archiving", href: "#archiving" },
