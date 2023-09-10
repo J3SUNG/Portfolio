@@ -1,6 +1,6 @@
 import profileImg from "/public/img/profile.jpg";
 import Image from "next/image";
-import whosTheZARA from "/public/img/awards/whosTheZARA.png";
+import whosTheZARA from "/public/img/awards/whosTheZara2.png";
 import nadri from "/public/img/awards/nadri.png";
 import suiteCar from "/public/img/awards/suiteCar.jpg";
 import media from "/public/img/awards/media.png";
@@ -16,56 +16,48 @@ export default function Awards() {
       award: "우수상(1등)",
       organize: "삼성전자주식회사",
       date: "2023.07.04 ~ 2023.08.18",
-      img: whosTheZARA,
     },
     {
       name: "SSAFY 관통 프로젝트",
       award: "최우수상",
       organize: "삼성전자주식회사",
       date: "2023.05.08 ~ 2023.05.26",
-      img: nadri,
     },
     {
       name: "Health-related IoT Tracking Platform",
       award: "Outstanding Achievement Award",
       organize: "Qualcomm Institute",
       date: "2020-01-27 ~ 2020-02-24",
-      img: suiteCar,
     },
     {
       name: "SW 해커톤 경진대회",
       award: "우수상",
       organize: "계명대학교",
       date: "2019.12.16",
-      img: hackathon,
     },
     {
       name: "학부생 논문 및 캡스톤디자인 경진대회",
       award: "우수상",
       organize: "한국방송 미디어 공학회",
       date: "2019.11.30",
-      img: media,
     },
     {
       name: "ACM-ICPC 서울대회",
       award: "Certificate of Achievement",
       organize: "International Collegiate Programming",
       date: "2019.11.09",
-      img: icpc,
     },
     {
       name: "디지털로 만드는 스마트 하우스 공모전",
       award: "창의상",
       organize: "대구 메이커 페스타",
       date: "2019.06.02",
-      img: zigball,
     },
     {
       name: "대경권 프로그래밍 경진대회",
       award: "장려상",
       organize: "경북, 한동, 안동, 대구가톨릭 대학교",
       date: "2019.05.11",
-      img: algorithm,
     },
   ];
   return (
