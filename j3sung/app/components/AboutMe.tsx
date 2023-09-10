@@ -16,7 +16,6 @@ export default function AboutMe() {
         <div className="ml-[0px] sm:ml-16 mt-6 font-Binggrae font-bold">
           <ul className="mt-[10px] sm:mt-0 leading-5 sm:leading-8 text-[8px] sm:text-[18px]">
             <li>이름 : 이제성 (만 28세)</li>
-            <li>학력 : 계명대학교 컴퓨터공학전공 졸업 (3.94 / 4.5)</li>
             <li>자격증 : SQLD, 전자기기기능사, ICDL Start, ITQ OA Master</li>
             <li>
               수상 : <br />
