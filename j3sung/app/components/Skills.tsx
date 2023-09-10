@@ -47,7 +47,7 @@ export default function Skills() {
     <>
       <section
         id="skill"
-        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
+        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[60px] ml-[14px]"
       >
         <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Skills</h2>
         <div className="flex flex-wrap w-[100vw] sm:w-auto">

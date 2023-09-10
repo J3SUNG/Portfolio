@@ -36,7 +36,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
+      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[160px]"
     >
       <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl sm:mb-10">
         Experience

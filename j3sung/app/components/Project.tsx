@@ -101,12 +101,12 @@ export default function Project() {
     <>
       <section
         id="project"
-        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[112px] sm:pt-[80px] ml-[14px]"
+        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:mt-[140px] ml-[14px]"
       >
         <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Project</h2>
         <div className="sm:mt-10 flex item-center sm:justify-center rounded-lg flex-wrap w-[93vw] sm:w-auto">
           {projects.map((item) => (
-            <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[40px] my-[20px] sm:my-[40px] h-[740px] w-full flex-wrap sm:flex-nowrap">
+            <div className="relative overflow-hidden flex rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[40px] my-[20px] sm:my-[40px] h-[800px] w-full flex-wrap sm:flex-nowrap">
               <div className="py-[10px] font-Binggrae flex flex-col justify-between">
                 <h2 className="text-[14px] sm:text-5xl font-bold mb-[10px] sm:mb-[20px]">
                   {item.name}
@@ -129,7 +129,7 @@ export default function Project() {
                     alt={item.name}
                     className="w-full h-[200px] sm:h-full object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
                   />
-                  <div className="absolute rounded-3xl bg-sky-900 min-w-[85vw] sm:min-w-[420px] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[40px] top-[16px] sm:top-[410px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
+                  <div className="absolute rounded-3xl bg-sky-900 min-w-[85vw] sm:min-w-[420px] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[40px] top-[16px] sm:top-[470px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
                     <Link
                       href={item.url}
                       target="_blank"
@@ -144,19 +144,19 @@ export default function Project() {
                 <div>
                   <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">주요기능</h3>
                   {item.description.map((descriptionItem) => (
-                    <p className="text-[10px] sm:text-[16px] w-[500px]">{descriptionItem}</p>
+                    <p className="text-[10px] sm:text-[18px] w-[500px]">{descriptionItem}</p>
                   ))}
                 </div>
                 <div>
                   <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">담당역할</h3>
                   {item.role.map((roleItem) => (
-                    <p className="text-[10px] sm:text-[16px] w-[500px]">{roleItem}</p>
+                    <p className="text-[10px] sm:text-[18px] w-[500px]">{roleItem}</p>
                   ))}
                 </div>
                 <div>
                   <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">성과 및 배운점</h3>
                   {item.experience.map((experienceItem) => (
-                    <p className="text-[10px] sm:text-[16px] w-[500px]">{experienceItem}</p>
+                    <p className="text-[10px] sm:text-[18px] w-[500px]">{experienceItem}</p>
                   ))}
                 </div>
               </div>
