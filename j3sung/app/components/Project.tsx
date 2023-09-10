@@ -1,8 +1,9 @@
 import nadri from "/public/img/projects/nadri.png";
 import suiteCar from "/public/img/projects/suiteCar.jpg";
-import zigball from "/public/img/projects/zigball.png";
-import noPiano from "/public/img/projects/noPiano.png";
 import whosTheZARA from "/public/img/projects/WhosTheZARA.png";
+import whosTheZARAIcon from "/public/img/projects/icons/rabbitIcon.png";
+import suiteCarIcon from "/public/img/projects/icons/suiteIcon.png";
+import nadriIcon from "/public/img/projects/icons/parasolIcon.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,6 +41,7 @@ export default function Project() {
         "- 협업을 통해 Git, Jira, 컨벤션, 설계의 중요성 인지 ",
       ],
       url: "https://github.com/J3SUNG/Who-s-The-ZARA",
+      icon: whosTheZARAIcon,
     },
     {
       name: "나들이",
@@ -68,13 +70,14 @@ export default function Project() {
         "- 여러 사람들의 피드백을 통해 사용자 UI/UX의 중요성 인지",
       ],
       url: "https://github.com/J3SUNG/Nadri",
+      icon: nadriIcon,
     },
     {
       name: "Suite Car",
       img: suiteCar,
       skill: "JavaScript, BootStrap, HTML, PHP, Slim, MySQL, Kotlin, C, Git",
       team: "FrontEnd 1명 / BackEnd 1명 / App 1명 / AI 1명",
-      subject: "센서 데이터 분석 및 시각화, 운전자에게 추천 선택지 제공",
+      subject: "센서 데이터 분석 및 시각화, 운전자 도우미",
       description: [
         "- 센서 데이터를 AI를 통해 보정",
         "- Map API를 통해서 사용자와 해당 센서들에 대한 위치 확인",
@@ -94,6 +97,7 @@ export default function Project() {
         "- 오류 노트 작성으로 같은 오류를 쉽게 처리 할 수 있었음",
       ],
       url: "https://github.com/J3SUNG/Suite-Car",
+      icon: suiteCarIcon,
     },
   ];
 
@@ -108,12 +112,12 @@ export default function Project() {
           {projects.map((item) => (
             <div className="relative overflow-hidden flex shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[40px] my-[20px] sm:my-[40px] h-[860px] w-full flex-wrap sm:flex-nowrap rounded-md leading-8">
               <div className="py-[10px] font-Binggrae flex flex-col justify-between">
-                <h2 className="text-[14px] sm:text-5xl font-bold mb-[10px] sm:mb-[20px]">
-                  {item.name}
-                </h2>
-                <div>
-                  <h3 className="text-[14px] sm:text-2xl font-bold">주제</h3>
-                  <p className="text-[10px] sm:text-lg w-[500px]">{item.subject}</p>
+                <div className="">
+                  <div className="flex items-center">
+                    <h2 className="text-[14px] sm:text-[50px] font-bold mr-[20px]">{item.name}</h2>
+                    <Image alt="whos the zara icon" src={item.icon} className="w-[60px] h-[60px]" />
+                  </div>
+                  <p className="text-[10px] sm:text-2xl w-[520px] mt-[30px]">{item.subject}</p>
                 </div>
                 <div>
                   <h3 className="text-[14px] sm:text-2xl font-bold">기술스택</h3>
@@ -123,13 +127,13 @@ export default function Project() {
                   <h3 className="text-[14px] sm:text-2xl font-bold">팀원</h3>
                   <p className="text-[10px] sm:text-lg w-[500px]">{item.team}</p>
                 </div>
-                <div className="min-w-[85vw] sm:min-w-[420px] sm:w-[420px] max-h-[280px] min-h-[280px] sm:mr-[80px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
+                <div className="min-w-[85vw] sm:min-w-[480px] sm:w-[480px] max-h-[320px] min-h-[320px] sm:mr-[80px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
                   <Image
                     src={item.img}
                     alt={item.name}
                     className="w-full h-[200px] sm:h-full object-fill shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
                   />
-                  <div className="absolute bg-sky-800 min-w-[85vw] sm:min-w-[420px] sm:w-[420px] h-[200px] sm:h-[280px] sm:left-[40px] top-[16px] sm:top-[530px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
+                  <div className="absolute bg-sky-800 min-w-[85vw] sm:min-w-[480px] sm:w-[480px] h-[200px] sm:h-[320px] sm:left-[40px] top-[16px] sm:top-[490px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
                     <Link
                       href={item.url}
                       target="_blank"
