@@ -1,6 +1,6 @@
 import profileImg from "/public/img/profile.jpg";
 import Image from "next/image";
-import whosTheZARA from "/public/img/awards/whosTheZara2.png";
+import whosTheZARA from "/public/img/awards/whosTheZara.png";
 import nadri from "/public/img/awards/nadri.png";
 import suiteCar from "/public/img/awards/suiteCar.jpg";
 import media from "/public/img/awards/media.png";
