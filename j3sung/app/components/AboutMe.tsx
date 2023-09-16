@@ -14,7 +14,7 @@ export default function AboutMe() {
         </div>
         <div className="absolute left-0 top-[338px] sm:top-[780px] bg-sky-100 -z-10 w-[42vw] sm:w-[34%] h-[300px] sm:h-[540px]"></div>
         <div className="ml-[0px] sm:ml-16 mt-6 font-Binggrae">
-          <h2 className="text-[40px] font-bold">고민하는 개발자, 이제성입니다.</h2>
+          <h2 className="text-[36px] font-bold">고민하는 프론트엔드 개발자, 이제성입니다.</h2>
           <ul className="mt-[10px] sm:mt-[20px] leading-5 sm:leading-[50px] text-[8px] sm:text-[22px]">
             <li>- 안녕하세요! 주니어 프론트엔드 개발자 이제성입니다.</li>
             <li>- "왜"라는 질문을 하고 "어떻게" 라는 방법을 찾습니다.</li>
