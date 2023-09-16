@@ -42,7 +42,7 @@ export default function Awards() {
       date: "2019.11.30",
     },
     {
-      name: "ACM-ICPC 서울대회",
+      name: "ACM-ICPC 알고리즘 서울대회",
       award: "Certificate of Achievement",
       organize: "International Collegiate Programming",
       date: "2019.11.09",
