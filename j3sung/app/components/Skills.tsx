@@ -21,25 +21,27 @@ import nodejs from "/public/img/skill/nodejs.png";
 import Image, { StaticImageData } from "next/image";
 import Chart from "./Chart";
 
-let skill: { img: StaticImageData; name: string; ability: number; type: number }[] = [
-  { img: react, name: "React", ability: 7, type: 1 },
-  { img: vue, name: "Vue", ability: 5, type: 1 },
-  { img: nextjs, name: "Nextjs", ability: 3, type: 1 },
-  { img: javascript, name: "Javascript", ability: 7, type: 2 },
-  { img: typescript, name: "Typescript", ability: 5, type: 2 },
-  { img: html, name: "HTML", ability: 7, type: 2 },
-  { img: tailwind, name: "Tailwind", ability: 7, type: 3 },
-  { img: css, name: "CSS", ability: 7, type: 3 },
-  { img: scss, name: "SCSS", ability: 4, type: 3 },
-  { img: bootstrap, name: "Bootstrap", ability: 3, type: 3 },
-  { img: spring, name: "Spring", ability: 4, type: 5 },
-  { img: nodejs, name: "Nodejs", ability: 3, type: 5 },
-  { img: java, name: "java", ability: 5, type: 4 },
-  { img: cpp, name: "C++", ability: 5, type: 4 },
-  { img: mysql, name: "MySQL", ability: 6, type: 6 },
-  { img: oracle, name: "Oracle", ability: 5, type: 6 },
-  { img: git, name: "Git", ability: 6, type: 7 },
-  { img: jira, name: "Jira", ability: 4, type: 7 },
+let skillFront: { img: StaticImageData; name: string; ability: number; type: number }[] = [
+  { img: react, name: "React", ability: 3, type: 1 },
+  { img: javascript, name: "Javascript", ability: 3, type: 2 },
+  { img: tailwind, name: "Tailwind", ability: 3, type: 3 },
+  { img: html, name: "HTML", ability: 3, type: 2 },
+  { img: css, name: "CSS", ability: 3, type: 3 },
+  { img: typescript, name: "Typescript", ability: 2, type: 2 },
+  { img: vue, name: "Vue", ability: 2, type: 1 },
+  { img: nextjs, name: "Nextjs", ability: 1, type: 1 },
+];
+let skillBack: { img: StaticImageData; name: string; ability: number; type: number }[] = [
+  { img: mysql, name: "MySQL", ability: 3, type: 5 },
+  { img: spring, name: "Spring", ability: 2, type: 4 },
+  { img: nodejs, name: "Nodejs", ability: 1, type: 4 },
+  { img: oracle, name: "Oracle", ability: 1, type: 5 },
+];
+let skillEtc: { img: StaticImageData; name: string; ability: number; type: number }[] = [
+  { img: git, name: "Git", ability: 3, type: 7 },
+  { img: jira, name: "Jira", ability: 2, type: 7 },
+  { img: java, name: "java", ability: 2, type: 6 },
+  { img: cpp, name: "C++", ability: 2, type: 6 },
 ];
 
 export default function Skills() {
@@ -47,13 +49,50 @@ export default function Skills() {
     <>
       <section
         id="skill"
-        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:pt-[120px] ml-[14px]"
+        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto sm:pt-[120px] ml-[14px]"
       >
         <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Skills</h2>
-        <div className="flex flex-wrap w-[100vw] sm:w-auto">
-          {skill.map((item) => (
-            <SkillCard item={item} key={item.name} />
-          ))}
+        <div>
+          <div className="flex items-end justify-between">
+            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] ">FrontEnd</h3>
+            <div className="text-[16px] font-bold mt-[20px] mr-[20px]">
+              <div className="flex">
+                <p className="text-gray-900">3점: 다수의 프로젝트 경험, </p>
+                <p className="text-gray-900">성과 多</p>
+              </div>
+              <div className="flex">
+                <p className="text-gray-700">2점: 한 개 이상의 프로젝트 경험, </p>
+                <p className="text-gray-700">성과 有</p>
+              </div>
+              <div className="flex">
+                <p className="text-gray-500">1점: 해당 기술을 사용해 본 경험, </p>
+                <p className="text-gray-500">성과 無</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-wrap w-[100vw] sm:w-auto">
+            {skillFront.map((item) => (
+              <SkillCard item={item} key={item.name} />
+            ))}
+          </div>
+        </div>
+        <div className="flex mt-[20px]">
+          <div>
+            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] r">BackEnd</h3>
+            <div className="flex flex-wrap w-[100vw] sm:w-auto">
+              {skillBack.map((item) => (
+                <SkillCard item={item} key={item.name} />
+              ))}
+            </div>
+          </div>
+          <div>
+            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] ">Language, Tool</h3>
+            <div className="flex flex-wrap w-[100vw] sm:w-auto">
+              {skillEtc.map((item) => (
+                <SkillCard item={item} key={item.name} />
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </>
@@ -73,17 +112,29 @@ const SkillCard = (props: skillProps) => {
   let { item } = props;
   return (
     <div className="hover:scale-110 duration-500 hover:z-0 z-0 mb-[16px] sm:mb-0">
-      <div className="relative w-auto -z-20">
+      <div className="relative z-20">
         <Image
           src={item.img}
-          className="absolute w-12 h-12 sm:w-32 sm:h-32 object-fill m-[12px] sm:m-[32px] p-[10px] sm:p-[22px] ml-[11px] sm:ml-[32px] mt-[1px] sm:mt-[10px]"
+          className="absolute w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] object-fill left-1/2 transform -translate-x-1/2 top-[30px]"
           alt={item.name}
         />
-        <Chart ability={item.ability} type={item.type} />
-        <p className="absolute w-full text-center font-bold text-[10px] sm:text-[16px] top-[50px] sm:top-[154px]">
-          {item.name}{" "}
-          <span className="text-[10px] sm:text-[16px] text-orange-500">({item.ability}/10)</span>
-        </p>
+        <div>
+          <Chart ability={item.ability} type={item.type} />
+          <p className="w-full text-center font-bold text-[10px] sm:text-[16px]">
+            {item.name}{" "}
+            <span
+              className={`text-[10px] sm:text-[18px] ${
+                item.ability === 3
+                  ? "text-orange-500"
+                  : item.ability === 2
+                  ? "text-orange-400"
+                  : "text-orange-300"
+              }`}
+            >
+              ({item.ability}/3)
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   );

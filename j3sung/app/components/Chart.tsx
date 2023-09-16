@@ -9,27 +9,24 @@ interface propsType {
 const Chart = (props: propsType) => {
   let { ability, type } = props;
   let backColor = [
-    "",
-    "#6C9EFF",
-    "#FFB466",
-    "#FFEA52",
-    "#CB76FF",
-    "#71FF87",
-    "#51F1FF ",
-    "#FF8989",
+    ["#B8CFFF", "#B8CFFF", "#B8CFFF", "#FFB84D", "#FFB84D", "#FFB9B3", "#FFB9B3"],
+    ["#9CBDFF", "#9CBDFF", "#9CBDFF", "#FFAC30", "#FFAC30", "#FF9F96", "#FF9F96"],
+    ["#6C9EFF", "#6C9EFF", "#6C9EFF", "#FF9900", "#FF9900", "#FF7367", "#FF7367"],
   ];
   return (
-    <div className="-rotate-90 ">
+    <div className="-rotate-90">
       <PieChart
         data={[
           {
-            value: ability * 10,
-            color: backColor[1],
+            value: ability * 20,
+            color: backColor[ability - 1][type - 1],
             name: "name1",
           },
         ]}
-        className="w-[50px] h-[50px] sm:w-[150px] sm:h-[150px] m-[10px] sm:m-[20px] mt-[10px] sm:mt-[40px]"
-        reveal={ability * 10} //퍼센트 치수
+        className={`w-[50px] h-[50px] sm:w-[120px] sm:h-[120px] sm:m-[11px] ${
+          ability === 3 ? "opacity-100" : ability === 2 ? "opacity-90" : "opacity-80"
+        }`}
+        reveal={ability * 32} //퍼센트 치수
         lineWidth={14} //도넛 두께
         background="#f3f3f3"
         lengthAngle={360}
