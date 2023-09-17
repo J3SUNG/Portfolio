@@ -1,17 +1,25 @@
-import nadri from "/public/img/projects/nadri.png";
-import suiteCar from "/public/img/projects/suiteCar.jpg";
-import whosTheZARA from "/public/img/projects/WhosTheZARA.png";
 import whosTheZARAIcon from "/public/img/projects/icons/rabbitIcon.png";
-import suiteCarIcon from "/public/img/projects/icons/suiteIcon.png";
 import nadriIcon from "/public/img/projects/icons/parasolIcon.png";
+import suiteCarIcon from "/public/img/projects/icons/suiteIcon.png";
+import wtz1 from "/public/img/projects/wtz1.png";
+import wtz2 from "/public/img/projects/wtz2.gif";
+import wtz3 from "/public/img/projects/wtz3.gif";
+import wtz4 from "/public/img/projects/wtz4.gif";
+import nad1 from "/public/img/projects/nad1.gif";
+import nad2 from "/public/img/projects/nad2.gif";
+import nad3 from "/public/img/projects/nad3.gif";
+import nad4 from "/public/img/projects/nad4.gif";
+import sui1 from "/public/img/projects/sui1.png";
+import sui2 from "/public/img/projects/sui2.jpg";
+import sui3 from "/public/img/projects/sui3.jpg";
+import sui4 from "/public/img/projects/sui4.jpg";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Project() {
   let projects = [
     {
       name: "Who's The ZARA",
-      img: whosTheZARA,
+      img: [wtz1, wtz2, wtz3, wtz4],
       skill:
         "Typescript, React, Tailwind, Vite, Open Vidu, Stomp, Spring Boot, Spring Security, JPA, MYSQL, Redis, Docker, Jira, Git",
       team: "FrontEnd 3명 / BackEnd 3명",
@@ -27,7 +35,7 @@ export default function Project() {
         "- 시간 별 상황 전환, 투표 및 능력 사용 기능",
       ],
       role: [
-        "- 팀장, FrontEnd를 1인 개발",
+        "- 팀장, FrontEnd 개발",
         "- 웹사이트 UI/UX 개발",
         "- 게임 개발",
         "- 방 CRUD 개발",
@@ -41,11 +49,12 @@ export default function Project() {
         "- 협업을 통해 Git, Jira, 컨벤션, 설계의 중요성 인지 ",
       ],
       url: "https://github.com/J3SUNG/Who-s-The-ZARA",
+      url2: "https://j3sung.tistory.com/1129",
       icon: whosTheZARAIcon,
     },
     {
       name: "나들이",
-      img: nadri,
+      img: [nad1, nad2, nad3, nad4],
       skill: "Vue.js, Javascript, HTML, CSS, SpringBoot, MySQL, emailjs, cheerio, vue-chartjs, Git",
       team: "FrontEnd 1명 / BackEnd 1명",
       subject: "지역별 관광 데이터를 활용한 여행 정보 사이트",
@@ -70,11 +79,12 @@ export default function Project() {
         "- 여러 사람들의 피드백을 통해 사용자 UI/UX의 중요성 인지",
       ],
       url: "https://github.com/J3SUNG/Nadri",
+      url2: "https://j3sung.tistory.com/1121",
       icon: nadriIcon,
     },
     {
       name: "Suite Car",
-      img: suiteCar,
+      img: [sui1, sui2, sui3, sui4],
       skill: "JavaScript, BootStrap, HTML, PHP, Slim, MySQL, Kotlin, C, Git",
       team: "FrontEnd 1명 / BackEnd 1명 / App 1명 / AI 1명",
       subject: "센서 데이터 분석 및 시각화, 운전자 도우미",
@@ -97,6 +107,7 @@ export default function Project() {
         "- 오류 노트 작성으로 같은 오류를 쉽게 처리 할 수 있었음",
       ],
       url: "https://github.com/J3SUNG/Suite-Car",
+      url2: "https://j3sung.tistory.com/519",
       icon: suiteCarIcon,
     },
   ];
@@ -127,24 +138,41 @@ export default function Project() {
                   <h3 className="text-[14px] sm:text-2xl font-bold">팀원</h3>
                   <p className="text-[10px] sm:text-lg w-[500px]">{item.team}</p>
                 </div>
-                <div className="min-w-[85vw] sm:min-w-[480px] sm:w-[480px] max-h-[320px] min-h-[320px] sm:mr-[80px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
-                  <Image
-                    src={item.img}
-                    alt={item.name}
-                    className="w-full h-[200px] sm:h-full object-fill shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
-                  />
-                  <div className="absolute bg-sky-800 min-w-[85vw] sm:min-w-[480px] sm:w-[480px] h-[200px] sm:h-[320px] sm:left-[40px] top-[16px] sm:top-[490px] opacity-0 hover:opacity-90 hover:cursor-pointer z-20">
-                    <Link
+                <div className="">
+                  <div className="flex">
+                    <h3 className="text-[10px] sm:text-lg font-bold">Git : </h3>
+                    <a
+                      className="text-[10px] sm:text-lg w-auto text-sky-500 ml-[10px]"
                       href={item.url}
                       target="_blank"
-                      className="flex items-center justify-center w-full h-full text-center text-white"
                     >
-                      <p className="text-sm text-white sm:text-xl">GitHub 페이지로 바로가기</p>
-                    </Link>
+                      {item.url}
+                    </a>
+                  </div>
+                  <div className="flex">
+                    <h3 className="text-[10px] sm:text-lg font-bold">회고 : </h3>
+                    <a
+                      className="text-[10px] sm:text-lg w-auto text-sky-500 ml-[10px]"
+                      href={item.url2}
+                      target="_blank"
+                    >
+                      {item.url2}
+                    </a>
+                  </div>
+                </div>
+                <div className="min-w-[85vw] sm:min-w-[520px] sm:w-[520px] max-h-[320px] min-h-[320px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
+                  <div className="flex flex-wrap">
+                    {item.img.map((imgItem) => (
+                      <Image
+                        src={imgItem}
+                        alt={item.name}
+                        className="w-[50%] min-h-[160px] max-h-[160px] sm:h-full object-contain shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
+                      />
+                    ))}
                   </div>
                 </div>
               </div>
-              <div className="py-[10px] font-Binggrae flex flex-col justify-around ml-[20px] w-full items-center">
+              <div className="py-[10px] font-Binggrae flex flex-col justify-around ml-[60px] w-full">
                 <div>
                   <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">주요기능</h3>
                   {item.description.map((descriptionItem) => (
