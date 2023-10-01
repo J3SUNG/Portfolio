@@ -7,8 +7,8 @@ import INTUSEER from "../../public/img/experience/INTUSEER.png";
 export default function Experience() {
   const experience = [
     {
-      date: "2023-01-04 ~ 2023-05-26",
-      title: "삼성 청년 SW 아카데미 1학기",
+      date: "2023-01-04 ~ 현재 진행 중",
+      title: "삼성 청년 SW 아카데미 (SSAFY 9기)",
       content: [
         "- Learn : Computer Science, Java, Algorithm",
         "- Front-end : Vue, HTML, CSS3, JavaScript, BootStrap",
