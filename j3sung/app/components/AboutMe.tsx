@@ -1,4 +1,5 @@
 import profileImg from "/public/img/profile.jpg";
+import wideProfile from "/public/img/wideProfile.jpg";
 import Image from "next/image";
 
 export default function AboutMe() {
@@ -10,7 +11,7 @@ export default function AboutMe() {
       <h2 className="text-4xl text-blue-900 sm:text-7xl font-bold text-left">About me</h2>
       <div className="sm:flex">
         <div className="flex items-center">
-          <Image src={profileImg} alt="profile image" className="w-[50vw] sm:w-[360px] " />
+          <Image src={wideProfile} alt="profile image" className="w-[50vw] sm:w-[360px] " />
         </div>
         <div className="absolute left-0 top-[338px] sm:top-[800px] bg-sky-100 -z-10 w-[42vw] sm:w-[34%] h-[300px] sm:h-[550px]"></div>
         <div className="ml-[0px] sm:ml-16 mt-6 font-Binggrae font-bold">
