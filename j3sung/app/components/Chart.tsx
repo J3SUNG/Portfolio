@@ -3,42 +3,39 @@ import { PieChart } from "react-minimal-pie-chart";
 
 interface propsType {
   ability: number;
+  type: number;
 }
 
 const Chart = (props: propsType) => {
-  let { ability } = props;
+  let { ability, type } = props;
   let backColor = [
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1",
-    "#525FE1 ",
-    "#525FE1 ",
-    "#525FE1 ",
-    "#525FE1 ",
+    ["#B8CFFF", "#B8CFFF", "#B8CFFF", "#FFB84D", "#FFB84D", "#FFB9B3", "#FFB9B3"],
+    ["#9CBDFF", "#9CBDFF", "#9CBDFF", "#FFAC30", "#FFAC30", "#FF9F96", "#FF9F96"],
+    ["#6C9EFF", "#6C9EFF", "#6C9EFF", "#FF9900", "#FF9900", "#FF7367", "#FF7367"],
   ];
   return (
-    <PieChart
-      data={[
-        {
-          value: ability * 10,
-          color: backColor[ability],
-          name: "name1",
-        },
-      ]}
-      className="w-[50px] h-[50px] sm:w-[150px] sm:h-[150px] m-[10px] sm:m-[20px] mt-[10px] sm:mt-[40px]"
-      reveal={ability * 10} //퍼센트 치수
-      lineWidth={14} //도넛 두께
-      background="#f3f3f3"
-      lengthAngle={360}
-      rounded
-      // animate
-      // animationDuration={1000}
-      labelPosition={0}
-    />
+    <div className="-rotate-90">
+      <PieChart
+        data={[
+          {
+            value: ability * 20,
+            color: backColor[ability - 1][type - 1],
+            name: "name1",
+          },
+        ]}
+        className={`w-[50px] h-[50px] sm:w-[120px] sm:h-[120px] sm:m-[11px] ${
+          ability === 3 ? "opacity-100" : ability === 2 ? "opacity-90" : "opacity-80"
+        }`}
+        reveal={ability * 32} //퍼센트 치수
+        lineWidth={14} //도넛 두께
+        background="#f3f3f3"
+        lengthAngle={360}
+        rounded
+        // animate
+        // animationDuration={1000}
+        labelPosition={0}
+      />
+    </div>
   );
 };
 
