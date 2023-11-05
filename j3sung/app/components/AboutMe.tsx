@@ -1,4 +1,5 @@
-import profileImg from "/public/img/profile.jpg";
+import profileImg1 from "/public/img/profile1.jpg";
+import profileImg2 from "/public/img/profile2.jpg";
 import Image from "next/image";
 
 export default function AboutMe() {
@@ -10,10 +11,19 @@ export default function AboutMe() {
       <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">About me</h2>
       <div className="sm:flex">
         <div className="flex">
-          <Image src={profileImg} alt="profile image" className="w-[50vw] sm:w-auto h-[480px]" />
+          <Image
+            src={profileImg2}
+            alt="profile image"
+            className="absolute w-[50vw] sm:w-auto h-[480px]"
+          />
+          <Image
+            src={profileImg1}
+            alt="profile image"
+            className="absolute w-[50vw] sm:w-auto h-[480px] hover:opacity-0"
+          />
         </div>
         <div className="absolute left-0 top-[338px] sm:top-[780px] bg-sky-100 -z-10 w-[42vw] sm:w-[34%] h-[300px] sm:h-[540px]"></div>
-        <div className="ml-[0px] sm:ml-10 mt-8 font-Binggrae">
+        <div className="ml-[0px] sm:ml-[420px] mt-8 font-Binggrae">
           <h3 className="text-[36px] font-bold">고민하는 프론트엔드 개발자, 이제성입니다.</h3>
           <ul className="mt-[10px] sm:mt-[20px] leading-5 sm:leading-[50px] text-[8px] sm:text-[22px]">
             <li>- 안녕하세요! 주니어 프론트엔드 개발자 이제성입니다.</li>
