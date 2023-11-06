@@ -34,7 +34,6 @@ export default function Archiving() {
       <div className="flex justify-around mt-[40px] flex-wrap sm:flex-nowrap w-[93vw] sm:w-full">
         {items.map((item) => (
           <div className="relative w-full sm:w-auto sm:min-w-[480px] sm:min-h-[340px] object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col pb-[30px] sm:pb-[0px] pl-[30px] text-lg hover:animate-wiggle overflow-hidden mb-[20px] sm:mb-[0px]">
-            <div className="absolute top-[-60px] right-[30px] w-[20px] sm:w-[30px] h-[200px] bg-sky-200 -rotate-45"></div>
             <Link
               href={item.url}
               target="_blank"
