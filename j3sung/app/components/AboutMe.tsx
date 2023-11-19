@@ -19,7 +19,7 @@ export default function AboutMe() {
           <Image
             src={profileImg1}
             alt="profile image"
-            className="absolute w-[50vw] sm:w-auto h-[480px] hover:opacity-0"
+            className="absolute w-[50vw] sm:w-auto h-[480px] animate-fade-in hover:opacity-0 hover:animate-fade-out"
           />
         </div>
         <div className="absolute left-0 top-[338px] sm:top-[780px] bg-sky-100 -z-10 w-[42vw] sm:w-[34%] h-[300px] sm:h-[540px]"></div>

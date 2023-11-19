@@ -12,6 +12,14 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       keyframes: {
+        "fade-in": {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        "fade-out": {
+          "0%": { opacity: 1 },
+          "100%": { opacity: 0 },
+        },
         blink: {
           "0%": { opacity: 0 },
           "100%": { opacity: 1 },
@@ -22,6 +30,8 @@ module.exports = {
         },
       },
       animation: {
+        "fade-in": "fade-in 0.5s ease-out",
+        "fade-out": "fade-out 0.5s ease-out",
         blink: "blink 400ms ease-in-out infinite alternate",
         wiggle: "wiggle 1s ease-in-out infinite",
       },
