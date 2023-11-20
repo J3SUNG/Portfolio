@@ -63,14 +63,14 @@ export default function Awards() {
   return (
     <section
       id="awards"
-      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[20px] sm:pt-[120px] ml-[14px]"
+      className="flex justify-center flex-col w-[1140px] m-auto h-auto pt-[120px]"
     >
-      <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Awards</h2>
-      <div className="flex-wrap sm:flex mt-[40px] justify-center">
+      <h2 className="font-bold text-left text-blue-900 text-7xl">Awards</h2>
+      <div className="flex-wrap flex mt-[40px] justify-center">
         {awards.map((award) => (
           <div className="w-[47%] h-[200px] flex mb-[20px] mx-[10px] rounded-[20px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-[10px]">
             <div className="ml-[20px] flex items-center font-Binggrae">
-              <ul className="sm:mt-0 text-[12px] sm:text-[20px] leading-10">
+              <ul className="text-[20px] leading-10">
                 <li className="relative flex mt-[10px] w-auto">
                   <p className="text-[22px] font-bold">🏆 {award.name}</p>
                 </li>

@@ -42,24 +42,22 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:pt-[120px]"
+      className="flex justify-center flex-col w-[1140px] m-auto h-auto pt-[120px]"
     >
-      <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl sm:mb-10">
-        Experience
-      </h2>
+      <h2 className="font-bold text-left text-blue-900 text-7xl mb-10">Experience</h2>
       <div className="relative font-Binggrae -z-20">
         {experience.map((item) => (
-          <div className="flex flex-col pl-[20px] sm:pl-8 my-8 sm:px-8 ml-0 sm:ml-[10px] relative">
-            <div className="flex font-bold text-[10px] sm:text-[22px]">
+          <div className="flex flex-col pl-8 my-8 px-8 ml-[10px] relative">
+            <div className="flex font-bold text-[22px]">
               <p className="mr-[10px]">{item.title}</p>
               <p>({item.date})</p>
             </div>
-            <div className="mt-[12px] pl-[4px] sm:pl-0 text-[10px] sm:text-[20px] w-[84vw] sm:w-full whitespace-normal">
+            <div className="mt-[12px] pl-0 text-[20px] w-full whitespace-normal">
               {item.content.map((content) => (
                 <p className="mb-[4px]">{content}</p>
               ))}
             </div>
-            <hr className="mt-[24px] w-[84vw] sm:w-full" />
+            <hr className="mt-[24px] w-full" />
             <div className="absolute right-0 w-[200px] flex justify-center top-1/3 -translate-y-1/3">
               <Image
                 src={item.img}
@@ -68,13 +66,13 @@ export default function Experience() {
               />
             </div>
             <Image
-              className="absolute left-[-3px] sm:left-[-5px] top-[4px] z-10 w-[9px] sm:w-[18px] h-[9px] sm:h-[18px]"
+              className="absolute left-[-5px] top-[4px] z-10 w-[18px] h-[18px]"
               src={triangle}
               alt="point"
             />
           </div>
         ))}
-        <div className="absolute bg-sky-200 top-[20px] sm:top-[0px] sm:left-[10px] w-[3px] sm:w-[6px] h-[450px] sm:h-[760px]"></div>
+        <div className="absolute bg-sky-200 top-[0px] left-[10px] w-[6px] h-[720px]"></div>
       </div>
     </section>
   );

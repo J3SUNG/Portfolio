@@ -28,12 +28,12 @@ export default function Archiving() {
   return (
     <section
       id="archiving"
-      className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:pt-[120px] ml-[14px]"
+      className="flex justify-center flex-col w-[1140px] m-auto h-auto mt-[40px] pt-[120px]"
     >
-      <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Archiving</h2>
-      <div className="flex justify-around mt-[40px] flex-wrap sm:flex-nowrap w-[93vw] sm:w-full">
+      <h2 className="font-bold text-left text-blue-900 text-7xl">Archiving</h2>
+      <div className="flex justify-around mt-[40px] flex-nowrap w-full">
         {items.map((item) => (
-          <div className="relative w-full sm:w-auto sm:min-w-[480px] sm:min-h-[340px] object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col pb-[30px] sm:pb-[0px] pl-[30px] text-lg hover:animate-wiggle overflow-hidden mb-[20px] sm:mb-[0px]">
+          <div className="relative w-auto min-w-[480px] min-h-[340px] object-fill rounded-3xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] flex flex-col pl-[30px] text-lg overflow-hidden">
             <Link
               href={item.url}
               target="_blank"
@@ -42,20 +42,12 @@ export default function Archiving() {
               {item.url}
             </Link>
             <div className="flex items-center mt-[30px]">
-              <Image
-                src={item.img}
-                alt="github"
-                className="w-[32px] sm:w-[50px] h-[32px] sm:h-[50px]"
-              />
-              <h2 className="text-2xl sm:text-5xl font-bold ml-[8px]">{item.name}</h2>
+              <Image src={item.img} alt="github" className="w-[50px] h-[50px]" />
+              <h2 className="text-5xl font-bold ml-[8px]">{item.name}</h2>
             </div>
-            <p className="text-[12px] sm:text-[18px] text-sky-500 mt-[10px] sm:mt-[20px]">
-              {item.url}
-            </p>
-            <p className="text-[12px] sm:text-[18px] font-bold mt-[6px] sm:mt-[16px]">
-              {item.content}
-            </p>
-            <ul className="text-[10px] sm:text-[18px] mt-[4px] sm:mt-[16px] list-disc pl-[20px] leading-5 sm:leading-10">
+            <p className="text-[18px] text-sky-500 mt-[20px]">{item.url}</p>
+            <p className="text-[18px] font-bold mt-[16px]">{item.content}</p>
+            <ul className="text-[18px] mt-[16px] pl-[20px] leading-10">
               <li>{item.li1}</li>
               <li>{item.li2}</li>
               <li>{item.li3}</li>
