@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="absolute bootom-0 w-full bg-zinc-800 h-44 mt-10 sm:mt-20 pt-10">
+    <div className="absolute bootom-0 w-full bg-zinc-800 h-44 mt-20 pt-10">
       <div className="flex justify-center my-2">
         <Link href="https://github.com/J3SUNG" target="_blank">
           <Image
