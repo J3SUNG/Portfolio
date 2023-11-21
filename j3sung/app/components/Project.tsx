@@ -116,33 +116,33 @@ export default function Project() {
     <>
       <section
         id="project"
-        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto mt-[40px] sm:pt-[120px] ml-[14px]"
+        className="flex justify-center flex-col w-[1140px] m-auto h-auto mt-[40px] pt-[120px]"
       >
-        <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Project</h2>
-        <div className="sm:mt-10 flex item-center sm:justify-center flex-wrap w-[93vw] sm:w-auto">
+        <h2 className="font-bold text-left text-blue-900 text-7xl">Project</h2>
+        <div className="flex flex-wrap justify-center w-auto mt-10 item-center">
           {projects.map((item) => (
-            <div className="relative overflow-hidden flex shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[16px] sm:py-[40px] px-[16px] sm:px-[40px] my-[20px] sm:my-[40px] h-[860px] w-full flex-wrap sm:flex-nowrap rounded-md leading-8">
+            <div className="relative overflow-hidden flex shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[40px] px-[40px] my-[40px] h-[860px] w-full flex-nowrap rounded-md leading-8">
               <div className="py-[10px] font-Binggrae flex flex-col justify-between">
                 <div className="">
                   <div className="flex items-center">
-                    <h2 className="text-[14px] sm:text-[50px] font-bold mr-[20px]">{item.name}</h2>
+                    <h2 className="text-[50px] font-bold mr-[20px]">{item.name}</h2>
                     <Image alt="whos the zara icon" src={item.icon} className="w-[60px] h-[60px]" />
                   </div>
-                  <p className="text-[10px] sm:text-2xl w-[520px] mt-[30px]">{item.subject}</p>
+                  <p className="text-2xl w-[520px] mt-[30px]">{item.subject}</p>
                 </div>
                 <div>
-                  <h3 className="text-[14px] sm:text-2xl font-bold">기술스택</h3>
-                  <p className="text-[10px] sm:text-lg w-[500px]">{item.skill}</p>
+                  <h3 className="text-2xl font-bold">기술스택</h3>
+                  <p className="text-lg w-[500px]">{item.skill}</p>
                 </div>
                 <div>
-                  <h3 className="text-[14px] sm:text-2xl font-bold">팀원</h3>
-                  <p className="text-[10px] sm:text-lg w-[500px]">{item.team}</p>
+                  <h3 className="text-2xl font-bold">팀원</h3>
+                  <p className="text-lg w-[500px]">{item.team}</p>
                 </div>
                 <div className="">
                   <div className="flex">
-                    <h3 className="text-[10px] sm:text-lg font-bold">Git : </h3>
+                    <h3 className="text-lg font-bold">Git : </h3>
                     <a
-                      className="text-[10px] sm:text-lg w-auto text-sky-500 ml-[10px]"
+                      className="text-lg w-auto text-sky-500 ml-[10px]"
                       href={item.url}
                       target="_blank"
                     >
@@ -150,9 +150,9 @@ export default function Project() {
                     </a>
                   </div>
                   <div className="flex">
-                    <h3 className="text-[10px] sm:text-lg font-bold">회고 : </h3>
+                    <h3 className="text-lg font-bold">회고 : </h3>
                     <a
-                      className="text-[10px] sm:text-lg w-auto text-sky-500 ml-[10px]"
+                      className="text-lg w-auto text-sky-500 ml-[10px]"
                       href={item.url2}
                       target="_blank"
                     >
@@ -160,13 +160,13 @@ export default function Project() {
                     </a>
                   </div>
                 </div>
-                <div className="min-w-[85vw] sm:min-w-[520px] sm:w-[520px] max-h-[320px] min-h-[320px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
+                <div className="min-w-[520px] w-[520px] max-h-[320px] min-h-[320px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
                   <div className="flex flex-wrap">
                     {item.img.map((imgItem) => (
                       <Image
                         src={imgItem}
                         alt={item.name}
-                        className="w-[50%] min-h-[160px] max-h-[160px] sm:h-full object-contain shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] sm:pr-0"
+                        className="w-[50%] min-h-[160px] max-h-[160px] h-full object-contain shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
                       />
                     ))}
                   </div>
@@ -174,21 +174,21 @@ export default function Project() {
               </div>
               <div className="py-[10px] font-Binggrae flex flex-col justify-around ml-[60px] w-full">
                 <div>
-                  <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">주요기능</h3>
+                  <h3 className="text-2xl font-bold mb-[5px]">주요기능</h3>
                   {item.description.map((descriptionItem) => (
-                    <p className="text-[10px] sm:text-[18px] w-[500px]">{descriptionItem}</p>
+                    <p className="text-[18px] w-[500px]">{descriptionItem}</p>
                   ))}
                 </div>
                 <div>
-                  <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">담당역할</h3>
+                  <h3 className="text-2xl font-bold mb-[5px]">담당역할</h3>
                   {item.role.map((roleItem) => (
-                    <p className="text-[10px] sm:text-[18px] w-[500px]">{roleItem}</p>
+                    <p className="text-[18px] w-[500px]">{roleItem}</p>
                   ))}
                 </div>
                 <div>
-                  <h3 className="text-[14px] sm:text-2xl font-bold mb-[5px]">성과 및 배운점</h3>
+                  <h3 className="text-2xl font-bold mb-[5px]">성과 및 배운점</h3>
                   {item.experience.map((experienceItem) => (
-                    <p className="text-[10px] sm:text-[18px] w-[500px]">{experienceItem}</p>
+                    <p className="text-[18px] w-[500px]">{experienceItem}</p>
                   ))}
                 </div>
               </div>

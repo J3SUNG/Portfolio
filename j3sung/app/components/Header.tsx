@@ -12,8 +12,8 @@ export default function Header() {
         height={500}
       />
       <div className="flex justify-center px-8">
-        <h2 className="absolute top-[240px] font-bold tracking-tight text-white z-30 text-8xl">
-          WEB
+        <h2 className="absolute top-[240px] font-bold text-white z-30 text-8xl">
+          FRONT
           <br />
           DEVELOPER
           <p className="z-30 inline ml-4 text-white animate-blink">_</p>

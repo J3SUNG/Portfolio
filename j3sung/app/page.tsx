@@ -11,7 +11,7 @@ import Awards from "./components/Awards";
 export default function Home() {
   return (
     <>
-      <header className="sm:sticky sm:-top-[500px] sm:z-50">
+      <header className="sticky -top-[500px] z-50">
         <Nav />
         <Header />
       </header>

@@ -23,7 +23,7 @@ const Chart = (props: propsType) => {
             name: "name1",
           },
         ]}
-        className={`w-[50px] h-[50px] sm:w-[120px] sm:h-[120px] sm:m-[11px] ${
+        className={`w-[120px] h-[120px] m-[11px] ${
           ability === 3 ? "opacity-100" : ability === 2 ? "opacity-90" : "opacity-80"
         }`}
         reveal={ability * 32} //퍼센트 치수
@@ -31,8 +31,8 @@ const Chart = (props: propsType) => {
         background="#f3f3f3"
         lengthAngle={360}
         rounded
-        // animate
-        // animationDuration={1000}
+        animate
+        animationDuration={1000}
         labelPosition={0}
       />
     </div>

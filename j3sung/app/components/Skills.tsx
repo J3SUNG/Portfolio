@@ -49,9 +49,9 @@ export default function Skills() {
     <>
       <section
         id="skill"
-        className="flex justify-center flex-col w-[1140px] sm:m-auto h-auto sm:pt-[120px] ml-[14px]"
+        className="flex justify-center flex-col w-[1140px] m-auto h-auto pt-[120px]"
       >
-        <h2 className="text-4xl font-bold text-left text-blue-900 sm:text-7xl">Skills</h2>
+        <h2 className="font-bold text-left text-blue-900 text-7xl">Skills</h2>
         <div>
           <div className="flex items-end justify-between">
             <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] ">FrontEnd</h3>
@@ -70,7 +70,7 @@ export default function Skills() {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap w-[100vw] sm:w-auto">
+          <div className="flex flex-wrap w-auto">
             {skillFront.map((item) => (
               <SkillCard item={item} key={item.name} />
             ))}
@@ -78,16 +78,16 @@ export default function Skills() {
         </div>
         <div className="flex mt-[20px]">
           <div>
-            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] r">BackEnd</h3>
-            <div className="flex flex-wrap w-[100vw] sm:w-auto">
+            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px]">BackEnd</h3>
+            <div className="flex flex-wrap w-auto">
               {skillBack.map((item) => (
                 <SkillCard item={item} key={item.name} />
               ))}
             </div>
           </div>
           <div>
-            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] ">Language, Tool</h3>
-            <div className="flex flex-wrap w-[100vw] sm:w-auto">
+            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px]">Language, Tool</h3>
+            <div className="flex flex-wrap w-auto">
               {skillEtc.map((item) => (
                 <SkillCard item={item} key={item.name} />
               ))}
@@ -111,19 +111,19 @@ interface skillProps {
 const SkillCard = (props: skillProps) => {
   let { item } = props;
   return (
-    <div className="hover:scale-110 duration-500 hover:z-0 z-0 mb-[16px] sm:mb-0">
+    <div className="z-0 mb-0 duration-500 hover:scale-110 hover:z-0">
       <div className="relative z-20">
         <Image
           src={item.img}
-          className="absolute w-[48px] h-[48px] sm:w-[60px] sm:h-[60px] object-fill left-1/2 transform -translate-x-1/2 top-[30px]"
+          className="absolute w-[60px] h-[60px] object-fill left-1/2 transform -translate-x-1/2 top-[30px]"
           alt={item.name}
         />
         <div>
           <Chart ability={item.ability} type={item.type} />
-          <p className="w-full text-center font-bold text-[10px] sm:text-[16px]">
+          <p className="w-full text-center font-bold text-[16px]">
             {item.name}{" "}
             <span
-              className={`text-[10px] sm:text-[18px] ${
+              className={`text-[18px] ${
                 item.ability === 3
                   ? "text-orange-500"
                   : item.ability === 2
