@@ -13,7 +13,7 @@ export default function Header() {
       />
       <div className="flex justify-center px-8">
         <h2 className="absolute top-[240px] font-bold text-white z-30 text-8xl">
-          FRONT
+          WEB
           <br />
           DEVELOPER
           <p className="z-30 inline ml-4 text-white animate-blink">_</p>
