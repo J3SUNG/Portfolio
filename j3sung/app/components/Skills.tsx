@@ -22,20 +22,20 @@ import Image, { StaticImageData } from "next/image";
 import Chart from "./Chart";
 
 let skillFront: { img: StaticImageData; name: string; ability: number; type: number }[] = [
-  { img: react, name: "React", ability: 3, type: 1 },
-  { img: javascript, name: "Javascript", ability: 3, type: 2 },
+  { img: react, name: "React", ability: 4, type: 1 },
+  { img: javascript, name: "Javascript", ability: 4, type: 2 },
+  { img: html, name: "HTML", ability: 4, type: 2 },
+  { img: css, name: "CSS", ability: 4, type: 3 },
   { img: tailwind, name: "Tailwind", ability: 3, type: 3 },
-  { img: html, name: "HTML", ability: 3, type: 2 },
-  { img: css, name: "CSS", ability: 3, type: 3 },
   { img: typescript, name: "Typescript", ability: 2, type: 2 },
   { img: vue, name: "Vue", ability: 2, type: 1 },
-  { img: nextjs, name: "Nextjs", ability: 1, type: 1 },
+  { img: nextjs, name: "Nextjs", ability: 2, type: 1 },
 ];
 let skillBack: { img: StaticImageData; name: string; ability: number; type: number }[] = [
   { img: mysql, name: "MySQL", ability: 3, type: 5 },
   { img: spring, name: "Spring", ability: 2, type: 4 },
-  { img: nodejs, name: "Nodejs", ability: 1, type: 4 },
-  { img: oracle, name: "Oracle", ability: 1, type: 5 },
+  { img: nodejs, name: "Nodejs", ability: 2, type: 4 },
+  { img: oracle, name: "Oracle", ability: 2, type: 5 },
 ];
 let skillEtc: { img: StaticImageData; name: string; ability: number; type: number }[] = [
   { img: git, name: "Git", ability: 3, type: 7 },
@@ -55,7 +55,7 @@ export default function Skills() {
         <div>
           <div className="flex items-end justify-between">
             <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] ">FrontEnd</h3>
-            <div className="text-[16px] font-bold mt-[20px] mr-[20px]">
+            {/* <div className="text-[16px] font-bold mt-[20px] mr-[20px]">
               <div className="flex">
                 <p className="text-gray-900">3점: 다수의 프로젝트 경험, </p>
                 <p className="text-gray-900">성과 多</p>
@@ -68,7 +68,7 @@ export default function Skills() {
                 <p className="text-gray-500">1점: 해당 기술을 사용해 본 경험, </p>
                 <p className="text-gray-500">성과 無</p>
               </div>
-            </div>
+            </div> */}
           </div>
           <div className="flex flex-wrap w-auto">
             {skillFront.map((item) => (
@@ -131,7 +131,7 @@ const SkillCard = (props: skillProps) => {
                   : "text-orange-300"
               }`}
             >
-              ({item.ability}/3)
+              ({item.ability}/5)
             </span>
           </p>
         </div>

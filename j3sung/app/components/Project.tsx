@@ -1,6 +1,8 @@
 import whosTheZARAIcon from "/public/img/projects/icons/rabbitIcon.png";
 import nadriIcon from "/public/img/projects/icons/parasolIcon.png";
 import suiteCarIcon from "/public/img/projects/icons/suiteIcon.png";
+import iDonCareIcon from "/public/img/projects/icons/iDonCareIcon.png";
+import jettyChartIcon from "/public/img/projects/icons/jettyChartIcon.png";
 import wtz1 from "/public/img/projects/wtz1.png";
 import wtz2 from "/public/img/projects/wtz2.gif";
 import wtz3 from "/public/img/projects/wtz3.gif";
@@ -13,10 +15,80 @@ import sui1 from "/public/img/projects/sui1.png";
 import sui2 from "/public/img/projects/sui2.jpg";
 import sui3 from "/public/img/projects/sui3.jpg";
 import sui4 from "/public/img/projects/sui4.jpg";
+import empty from "/public/img/empty.png";
 import Image from "next/image";
 
 export default function Project() {
   let projects = [
+    {
+      name: "Jetty Chart",
+      img: [empty, empty, empty, empty],
+      skill: "React, Nextjs, jira, git",
+      team: "개발 : 6명",
+      subject: "오픈소스 차트 라이브러리 개발 프로젝트",
+      description: [
+        "1. 차트 개발",
+        "- bar",
+        "- stacked bar",
+        "- line",
+        "- stacked line",
+        "- bump",
+        "- scatter",
+        "- pie",
+        "- donut",
+        "- pyramid",
+        "- map",
+        "2. 데모 사이트 개발",
+        "- 설정에 따라 변경되는 차트를 직접 확인 가능",
+        "- 설정한 차트를 코드로 변환하여 보다 쉽게 사용 할 수 있게 함",
+        "3. NPM 배포",
+        "- 실제로 배포 받아 해당 차트를 사용 가능",
+      ],
+      role: ["- 파이차트, 도넛차트 개발", "- 데모 사이트 자동화 및 개발"],
+      experience: [
+        "- 오픈소스 프로젝트 진행",
+        "- 다양한 커스터마이징 기능의 차트 라이브러리 제공",
+        "- 데모 사이트 자동화를 통해서 빠르게 사이트 제작 완료",
+        "- 라이브러리로 사용 되는 것이므로 최적화가 중요",
+      ],
+      url: "https://github.com/sdh20282/jetty-chart",
+      url2: "",
+      icon: jettyChartIcon,
+    },
+    {
+      name: "아이돈케어",
+      img: [empty, empty, empty, empty],
+      skill:
+        "Typescript, React, Tailwind, PWA, React Query, Recoil, Spring Boot, Spring Security, JPA, MYSQL, Redis, Docker, Jest, Jira, Git",
+      team: "FrontEnd 3명 / BackEnd 3명",
+      subject: "마이데이터를 활용한 아이 용돈 관리 서비스 제작",
+      description: [
+        "- 로그인 보안 JWT 구현",
+        "- 부모와 자식 관계 관리",
+        "- 용돈 지급 및 정기 용돈 설정",
+        "- 미션 기능",
+        "- 결제, 이체 기능",
+        "- 용돈, 미션, 결제 등 내역 조회 기능",
+        "- 활동 보고서 (내역 시각화)",
+      ],
+      role: [
+        "- FrontEnd",
+        "- UI/UX 개발",
+        "- 용돈 기능 구현",
+        "- 관계 기능 구현",
+        "- 로그인 관리",
+        "- 공통 컴포넌트 개발",
+      ],
+      experience: [
+        "- React Query, Recoil, PWA, Jest 등 새로운 기술 사용 경험",
+        "- 최적화 통해 성능 향상",
+        "- 모바일 환경 UI/UX에 대한 공부 필요",
+        "- 상황에 맞는 테스트 기법이 필요",
+      ],
+      url: "",
+      url2: "",
+      icon: iDonCareIcon,
+    },
     {
       name: "Who's The ZARA",
       img: [wtz1, wtz2, wtz3, wtz4],
@@ -44,9 +116,9 @@ export default function Project() {
       experience: [
         "- SSAFY 공통 프로젝트 우수상 (1등)",
         "- Web RTC, Stomp 등 새로운 기술 사용 경험",
-        "- 게임 테스터들을 통해서 UI/UX 공부가 필요",
-        "- 게임이라는 주제인 만큼 재미와 고객유치가 중요",
-        "- 협업을 통해 Git, Jira, 컨벤션, 설계의 중요성 인지 ",
+        "- 게임 테스터들을 통해서 UX를 더 신경써야겠다고 생각하게 됨",
+        "- 주제에 따라 중요한 부분이 다르다는 것을 인지(게임은 재미와 고객유치)",
+        "- 협업을 통해 Git, Jira, 컨벤션, 설계의 중요성 인지",
       ],
       url: "https://github.com/J3SUNG/Who-s-The-ZARA",
       url2: "https://j3sung.tistory.com/1129",
@@ -76,7 +148,7 @@ export default function Project() {
         "- SSAFY 관통 프로젝트 최우수상 ",
         "- 공공데이터 API, Kakao Map API 활용",
         "- 다양한 라이브러리 사용 (크롤링, 이메일, 차트)",
-        "- 여러 사람들의 피드백을 통해 사용자 UI/UX의 중요성 인지",
+        "- 기획 설계를 더욱 시간을 들여서 해야한다는 것을 알게되었음",
       ],
       url: "https://github.com/J3SUNG/Nadri",
       url2: "https://j3sung.tistory.com/1121",
