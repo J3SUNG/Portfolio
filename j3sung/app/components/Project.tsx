@@ -15,7 +15,7 @@ import sui1 from "/public/img/projects/sui1.png";
 import sui2 from "/public/img/projects/sui2.jpg";
 import sui3 from "/public/img/projects/sui3.jpg";
 import sui4 from "/public/img/projects/sui4.jpg";
-import empty from "/public/img/empty.png";
+import empty from "/public/img/projects/empty.png";
 import Image from "next/image";
 
 export default function Project() {
