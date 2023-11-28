@@ -195,7 +195,7 @@ export default function Project() {
         <h2 className="font-bold text-left text-blue-900 text-7xl">Project</h2>
         <div className="flex flex-wrap justify-center w-auto mt-10 item-center">
           {projects.map((item) => (
-            <div className="relative overflow-hidden flex shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[40px] px-[40px] my-[40px] h-[860px] w-full flex-nowrap rounded-md leading-8">
+            <div className="relative overflow-hidden flex shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[40px] px-[40px] my-[40px] h-[1000px] w-full flex-nowrap rounded-md leading-8">
               <div className="py-[10px] font-Binggrae flex flex-col justify-between">
                 <div className="">
                   <div className="flex items-center">
