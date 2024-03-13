@@ -1,26 +1,27 @@
-import React from "react";
+import headerImg from "/public/img/sky.jpg";
+import Image from "next/image";
 
-const Header = () => {
+export default function Header() {
   return (
-    <>
-      <div className="w-[1280px] h-[600px] m-auto bg-[#395fd3] rounded-[30px]">
-        <svg width={1280} height={600} viewBox="0 0 100 100">
-          <text
-            fontSize={40}
-            color="black"
-            stroke="black"
-            x={50}
-            y={50}
-            textAnchor="middle"
-            dominantBaseline="central"
-            className="font-pre-bold"
-          >
-            Front End
-          </text>
-        </svg>
+    <div className="relative isolate overflow-hidden bg-gray-900 h-[620px] w-full z-40">
+      <Image
+        src={headerImg}
+        alt="header background image"
+        className="absolute top-0 z-20 object-cover object-right w-full h-full"
+        width={500}
+        height={500}
+      />
+      <div className="flex justify-center px-8">
+        <h2 className="absolute top-[240px] font-bold text-white z-30 text-8xl">
+          WEB
+          <br />
+          DEVELOPER
+          <p className="z-30 inline ml-4 text-white animate-blink">_</p>
+        </h2>
+        <p className="absolute top-[180px] ml-[160px] mt-20 text-6xl italic font-DancingScript text-yellow-300 z-30">
+          Jeseong Lee
+        </p>
       </div>
-    </>
+    </div>
   );
-};
-
-export default Header;
+}
