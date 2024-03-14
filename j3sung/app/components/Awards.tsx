@@ -1,14 +1,3 @@
-import profileImg from "/public/img/profile.jpg";
-import Image from "next/image";
-import whosTheZARA from "/public/img/awards/whosTheZara.png";
-import nadri from "/public/img/awards/nadri.png";
-import suiteCar from "/public/img/awards/suiteCar.jpg";
-import media from "/public/img/awards/media.png";
-import icpc from "/public/img/awards/icpc.png";
-import zigball from "/public/img/awards/zigball.jpg";
-import algorithm from "/public/img/awards/algorithm.png";
-import hackathon from "/public/img/awards/hackathon.jpg";
-
 export default function Awards() {
   const awards = [
     {
@@ -61,26 +50,23 @@ export default function Awards() {
     },
   ];
   return (
-    <section
-      id="awards"
-      className="flex justify-center flex-col w-[1140px] m-auto h-auto pt-[120px]"
-    >
-      <h2 className="font-bold text-left text-blue-900 text-7xl">Awards</h2>
-      <div className="flex-wrap flex mt-[40px] justify-center">
+    <section id="awards" className="w-[1280px] m-auto pt-[40px]">
+      <h2 className="font-bold text-blue-900 text-[72px]">Awards</h2>
+      <div className="flex flex-wrap justify-start">
         {awards.map((award) => (
-          <div className="w-[47%] h-[200px] flex mb-[20px] mx-[10px] rounded-[20px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-[10px]">
-            <div className="ml-[20px] flex items-center font-Binggrae">
-              <ul className="text-[20px] leading-10">
-                <li className="relative flex mt-[10px] w-auto">
-                  <p className="text-[22px] font-bold">🏆 {award.name}</p>
+          <div className="w-[560px] h-[190px] flex mb-[20px] mr-[40px] rounded-[20px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] pl-[30px]">
+            <div className="flex items-center">
+              <ul className="leading-8">
+                <li className="flex my-[10px]">
+                  <p className="text-[24px] font-bold">🏆 {award.name}</p>
                 </li>
-                <li className="flex">
+                <li className="flex text-[22px]">
                   <p>수상내역 : {award.award}</p>
                 </li>
-                <li className="flex">
+                <li className="flex text-[20px]">
                   <p>주관 : {award.organize}</p>
                 </li>
-                <li className="flex">
+                <li className="flex text-[20px]">
                   <p>날짜 : {award.date}</p>
                 </li>
               </ul>

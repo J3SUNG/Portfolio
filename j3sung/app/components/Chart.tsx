@@ -19,11 +19,11 @@ const Chart = (props: propsType) => {
         data={[
           {
             value: ability * 20,
-            color: backColor[ability - 2][type - 1],
+            color: backColor[ability - 1][type - 1],
             name: "name1",
           },
         ]}
-        className={`w-[120px] h-[120px] m-[11px] ${
+        className={`w-[140px] h-[140px] m-[10px] ${
           ability === 3 ? "opacity-100" : ability === 2 ? "opacity-90" : "opacity-80"
         }`}
         reveal={ability * 20} //퍼센트 치수

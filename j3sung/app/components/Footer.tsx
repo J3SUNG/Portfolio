@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <div className="absolute bootom-0 w-full bg-zinc-800 h-44 mt-20 pt-10">
+    <div className="absolute w-full pt-10 mt-10 bg-zinc-800 h-44">
       <div className="flex justify-center my-2">
         <Link href="https://github.com/J3SUNG" target="_blank">
           <Image
@@ -15,7 +15,7 @@ export default function Footer() {
             alt="github image"
             width={48}
             height={48}
-            className="border-2 border-white rounded-full mx-2 bg-white"
+            className="mx-2 bg-white border-2 border-white rounded-full"
           />
         </Link>
         <Link href="https://j3sung.tistory.com/" target="_blank">
@@ -24,7 +24,7 @@ export default function Footer() {
             alt="tistory image"
             width={48}
             height={48}
-            className="border-2 border-white rounded-full mx-2 bg-white"
+            className="mx-2 bg-white border-2 border-white rounded-full"
           />
         </Link>
         <Link href="https://open.kakao.com/o/sRr7WMqf" target="_blank">
@@ -33,7 +33,7 @@ export default function Footer() {
             alt="tistory image"
             width={48}
             height={48}
-            className="border-2 border-white rounded-full mx-2 bg-white"
+            className="mx-2 bg-white border-2 border-white rounded-full"
           />
         </Link>
         <Link href="mailto:wptjd6141@naver.com" target="_blank">
@@ -42,11 +42,11 @@ export default function Footer() {
             alt="tistory image"
             width={48}
             height={48}
-            className="border-2 border-white rounded-full mx-2 bg-white"
+            className="mx-2 bg-white border-2 border-white rounded-full"
           />
         </Link>
       </div>
-      <p className="text-center text-md text-white pt-2">
+      <p className="pt-2 text-center text-white text-md">
         © 2023. JeSeong Lee. All rights reserved.
       </p>
     </div>

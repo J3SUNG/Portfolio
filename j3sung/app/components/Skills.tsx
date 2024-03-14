@@ -17,64 +17,43 @@ import nodejs from "/public/img/skill/nodejs.png";
 import Image, { StaticImageData } from "next/image";
 import Chart from "./Chart";
 
-let skillFront: { img: StaticImageData; name: string; ability: number; type: number }[] = [
+const skillFront: { img: StaticImageData; name: string; ability: number; type: number }[] = [
   { img: react, name: "React", ability: 3, type: 1 },
   { img: javascript, name: "Javascript", ability: 3, type: 2 },
   { img: html, name: "HTML", ability: 3, type: 2 },
   { img: css, name: "CSS", ability: 3, type: 3 },
   { img: tailwind, name: "Tailwind", ability: 3, type: 3 },
   { img: typescript, name: "Typescript", ability: 2, type: 2 },
-  { img: vue, name: "Vue", ability: 2, type: 1 },
-  { img: next, name: "Next", ability: 2, type: 1 },
+  { img: vue, name: "Vue", ability: 1, type: 1 },
+  { img: next, name: "Next", ability: 1, type: 1 },
 ];
-let skillBack: { img: StaticImageData; name: string; ability: number; type: number }[] = [
+const skillBack: { img: StaticImageData; name: string; ability: number; type: number }[] = [
   { img: mysql, name: "MySQL", ability: 3, type: 5 },
   { img: spring, name: "Spring", ability: 2, type: 4 },
-  { img: nodejs, name: "Nodejs", ability: 2, type: 4 },
-  { img: oracle, name: "Oracle", ability: 2, type: 5 },
+  { img: nodejs, name: "Nodejs", ability: 1, type: 4 },
+  { img: oracle, name: "Oracle", ability: 1, type: 5 },
 ];
-let skillEtc: { img: StaticImageData; name: string; ability: number; type: number }[] = [
+const skillEtc: { img: StaticImageData; name: string; ability: number; type: number }[] = [
   { img: git, name: "Git", ability: 3, type: 7 },
   { img: jira, name: "Jira", ability: 2, type: 7 },
   { img: java, name: "java", ability: 2, type: 6 },
-  { img: cpp, name: "C++", ability: 2, type: 6 },
+  { img: cpp, name: "C++", ability: 1, type: 6 },
 ];
 
 export default function Skills() {
   return (
     <>
-      <section
-        id="skill"
-        className="flex justify-center flex-col w-[1140px] m-auto h-auto pt-[120px]"
-      >
-        <h2 className="font-bold text-left text-blue-900 text-7xl">Skills</h2>
-        <div>
-          <div className="flex items-end justify-between">
-            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px] ">FrontEnd</h3>
-            {/* <div className="text-[16px] font-bold mt-[20px] mr-[20px]">
-              <div className="flex">
-                <p className="text-gray-900">3점: 다수의 프로젝트 경험, </p>
-                <p className="text-gray-900">성과 多</p>
-              </div>
-              <div className="flex">
-                <p className="text-gray-700">2점: 한 개 이상의 프로젝트 경험, </p>
-                <p className="text-gray-700">성과 有</p>
-              </div>
-              <div className="flex">
-                <p className="text-gray-500">1점: 해당 기술을 사용해 본 경험, </p>
-                <p className="text-gray-500">성과 無</p>
-              </div>
-            </div> */}
-          </div>
-          <div className="flex flex-wrap w-auto">
-            {skillFront.map((item) => (
-              <SkillCard item={item} key={item.name} />
-            ))}
-          </div>
+      <section id="skill" className="w-[1280px] m-auto pt-[40px]">
+        <h2 className="font-bold text-blue-900 text-[72px]">Skills</h2>
+        <h3 className="text-[28px] font-bold ml-[10px] ">FrontEnd</h3>
+        <div className="flex flex-wrap w-auto">
+          {skillFront.map((item) => (
+            <SkillCard item={item} key={item.name} />
+          ))}
         </div>
         <div className="flex mt-[20px]">
           <div>
-            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px]">BackEnd</h3>
+            <h3 className="text-[28px] font-bold ml-[10px]">BackEnd</h3>
             <div className="flex flex-wrap w-auto">
               {skillBack.map((item) => (
                 <SkillCard item={item} key={item.name} />
@@ -82,7 +61,7 @@ export default function Skills() {
             </div>
           </div>
           <div>
-            <h3 className="text-[30px] font-bold mt-[20px] ml-[10px]">Language, Tool</h3>
+            <h3 className="text-[28px] font-bold ml-[10px]">Language, Tool</h3>
             <div className="flex flex-wrap w-auto">
               {skillEtc.map((item) => (
                 <SkillCard item={item} key={item.name} />
@@ -107,16 +86,16 @@ interface skillProps {
 const SkillCard = (props: skillProps) => {
   let { item } = props;
   return (
-    <div className="z-0 mb-0 duration-500 hover:scale-110 hover:z-0">
-      <div className="relative z-20">
+    <div className="duration-300 hover:scale-110">
+      <div className="relative">
         <Image
           src={item.img}
-          className="absolute w-[60px] h-[60px] object-fill left-1/2 transform -translate-x-1/2 top-[30px]"
+          className="absolute w-[80px] h-[80px] object-fill left-1/2 transform -translate-x-1/2 top-[30px]"
           alt={item.name}
         />
         <div>
           <Chart ability={item.ability} type={item.type} />
-          <p className="w-full text-center font-bold text-[16px]">
+          <p className="w-full text-center font-bold text-[20px]">
             {item.name}{" "}
             <span
               className={`text-[18px] ${

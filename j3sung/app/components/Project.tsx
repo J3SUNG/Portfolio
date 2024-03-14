@@ -16,6 +16,18 @@ import sui1 from "/public/img/projects/sui1.png";
 import sui2 from "/public/img/projects/sui2.jpg";
 import sui3 from "/public/img/projects/sui3.jpg";
 import sui4 from "/public/img/projects/sui4.jpg";
+import bc1 from "/public/img/projects/bc1.png";
+import bc2 from "/public/img/projects/bc2.gif";
+import bc3 from "/public/img/projects/bc3.gif";
+import bc4 from "/public/img/projects/bc4.gif";
+import jc1 from "/public/img/projects/jc1.png";
+import jc2 from "/public/img/projects/jc2.png";
+import jc3 from "/public/img/projects/jc3.png";
+import jc4 from "/public/img/projects/jc4.png";
+import ic1 from "/public/img/projects/ic1.png";
+import ic2 from "/public/img/projects/ic2.png";
+import ic3 from "/public/img/projects/ic3.png";
+import ic4 from "/public/img/projects/ic4.png";
 import empty from "/public/img/projects/empty.png";
 import Image from "next/image";
 
@@ -23,61 +35,43 @@ export default function Project() {
   let projects = [
     {
       name: "블록 코딩 서비스",
-      img: [empty, empty, empty, empty],
+      img: [bc1, bc2, bc3, bc4],
       skill: "Typescript, HTML, CSS, jira, git",
-      team: "프론트엔드 : 1명",
+      team: "프론트엔드 : 1인 개발",
       subject: "블록 코딩 서비스 개발",
       description: [
-        `
-        블록 구현: 사용자가 코딩 로직을 시각적으로 조립할 수 있도록 다양한 블록 유형 개발
-
-        선언문: 프로그램 진입점과 함수 정의를 위한 시작 및 함수 블록 제작
-        일반문: 변수 선언, 출력, 타이머 설정, 함수 호출, 디버깅 등의 기능을 포함한 블록 구현
-        제어문: 조건문과 반복문을 통한 프로그램 흐름 제어 블록 개발
-        표현식 값: 입력 값, 변수 참조, 산술 및 문자열 연산, 랜덤 값 생성, 함수 반환 값을 다루는 블록 구현
-        표현식 논리: 비교, 부정, 논리 연산을 수행하는 블록 제작
-        블록 연결 및 배치: 드래그 앤 드롭으로 블록을 연결하고 배치할 수 있는 인터페이스 개발
-        
-        프로그램 실행 제어: 작성된 블록 코드의 실행, 정지, 일시정지 기능 구현
-        
-        예외 처리: 프로그램 실행 중 발생할 수 있는 예외 사항을 처리하는 기능을 구현
-        
-        추가 기능:
-        URL 블록 공유 : URL을 통한 블록 코드 공유 기능을 구현하여 사용자 간의 작업물 공유 가능
-        Javascript 코드 export : JavaScript 코드로의 export 기능을 통해 블록 코드를 실제 프로그래밍 코드로 변환
-        JSON 저장 / 불러오기 : JSON 형식으로 프로젝트 저장 및 불러오기 기능을 구현하여 사용자의 작업물 관리를 지원
-        디버깅 블록 구현 : 사용자는 현재 실행 중인 블록을 시각적으로 확인하고, 출력 결과가 예상대로 순차적으로 나타나는지 검증 가능
-        복사 기능 : 블록을 복사하는 기능
-        되돌리기 기능 : 이전 블록 객체 상태로 돌아가는 기능
-        `,
+        "- 블록 구현 (선언문, 일반문, 제어문, 표현식)",
+        "- 블록 연결 및 배치",
+        "- 프로그램 실행 제어",
+        "- 프로그램 실행 예외 처리",
+        "- URL 블록 공유 기능",
+        "- Javascript 코드 추출 기능",
+        "- JSON 저장 / 불러오기 기능",
+        "- 디버깅 기능 구현",
+        "- 복사 기능",
+        "- 되돌리기 기능",
       ],
-      role: ["- 파이차트, 도넛차트 개발"],
       experience: [
-        "- 오픈소스 프로젝트 진행",
-        "- 다양한 커스터마이징 기능의 차트 라이브러리 제공",
-        "- 데모 사이트 자동화를 통해서 빠르게 사이트 제작 완료",
-        "- 라이브러리로 사용 되는 것이므로 최적화가 중요",
+        "- 코드 리뷰와 대면 리뷰를 통해 피드백을 받고, 피드백을 통해 개선하는 경험",
+        "- 기술을 적용 할 때 해당 기술이 왜 필요하고, 어떤 점이 이점이 되는지를 고민하는 습관을 가짐",
+        "- 설계에 문제가 생길 경우, 프로젝트가 커질 수록 문제가 발생하고 늦어질수록 고치는 비용이 많이 드는 것을 경험",
       ],
-      url: "https://github.com/sdh20282/jetty-chart",
-      url2: "https://jetty-chart-demo.vercel.app/",
+      url: [{ name: "github", link: "https://github.com/J3SUNG/BlockCoding" }],
       icon: blockCodingIcon,
     },
     {
       name: "Jetty Chart",
-      img: [empty, empty, empty, empty],
+      img: [jc1, jc2, jc3, jc4],
       skill: "React, Nextjs, jira, git",
       team: "개발 : 6명",
       subject: "오픈소스 차트 라이브러리 개발 프로젝트",
       description: [
         "1. 차트 개발",
-        "- bar",
-        "- stacked bar",
-        "- line",
-        "- stacked line",
+        "- bar / stacked bar",
+        "- line / stacked line",
+        "- pie / donut",
         "- bump",
         "- scatter",
-        "- pie",
-        "- donut",
         "- pyramid",
         "- map",
         "2. 데모 사이트 개발",
@@ -86,21 +80,23 @@ export default function Project() {
         "3. NPM 배포",
         "- 실제로 배포 받아 해당 차트를 사용 가능",
       ],
-      // role: ["- 파이차트, 도넛차트 개발", "- 데모 사이트 자동화 및 개발"],
-      role: ["- 파이차트, 도넛차트 개발"],
+      role: ["- 파이차트, 도넛차트 개발, 데모 사이트 개발"],
       experience: [
         "- 오픈소스 프로젝트 진행",
         "- 다양한 커스터마이징 기능의 차트 라이브러리 제공",
         "- 데모 사이트 자동화를 통해서 빠르게 사이트 제작 완료",
         "- 라이브러리로 사용 되는 것이므로 최적화가 중요",
       ],
-      url: "https://github.com/sdh20282/jetty-chart",
-      url2: "",
+      url: [
+        { name: "데모 사이트", link: "https://jetty-chart-demo.vercel.app/" },
+        { name: "npm", link: "https://www.npmjs.com/package/jetty-chart" },
+        { name: "github", link: "https://github.com/sdh20282/jetty-chart" },
+      ],
       icon: jettyChartIcon,
     },
     {
       name: "아이돈케어",
-      img: [empty, empty, empty, empty],
+      img: [ic1, ic2, ic3, ic4],
       skill:
         "Typescript, React, Tailwind, PWA, React Query, Recoil, Spring Boot, Spring Security, JPA, MYSQL, Redis, Docker, Jest, Jira, Git",
       team: "FrontEnd 3명 / BackEnd 3명",
@@ -114,11 +110,12 @@ export default function Project() {
         "- 용돈, 미션, 결제 등 내역 조회 기능",
         "- 활동 보고서 (내역 시각화)",
       ],
+      url: [],
       role: [
         "- FrontEnd",
         "- UI/UX 개발",
-        // "- 용돈 기능 구현",
-        // "- 관계 기능 구현",
+        "- 용돈 기능 구현",
+        "- 관계 기능 구현",
         "- 로그인 관리",
         "- 공통 컴포넌트 개발",
       ],
@@ -128,8 +125,6 @@ export default function Project() {
         "- 모바일 환경 UI/UX에 대한 공부 필요",
         "- 상황에 맞는 테스트 기법이 필요",
       ],
-      url: "",
-      url2: "",
       icon: iDonCareIcon,
     },
     {
@@ -154,18 +149,25 @@ export default function Project() {
         "- 웹사이트 UI/UX 개발",
         "- 게임 개발",
         "- 캐릭터 애니메이션 개발",
-        // "- 방 CRUD 개발",
         "- 웹소켓, API 연결",
       ],
       experience: [
         "- SSAFY 공통 프로젝트 우수상 (1등)",
         "- Web RTC, Stomp 등 새로운 기술 사용 경험",
-        "- 게임 테스터들을 통해서 UX를 더 신경써야겠다고 생각하게 됨",
+        "- 게임 테스터들을 통해서 UX/UI 개선 경험",
         "- 주제에 따라 중요한 부분이 다르다는 것을 인지(게임은 재미와 고객유치)",
         "- 협업을 통해 Git, Jira, 컨벤션, 설계의 중요성 인지",
       ],
-      url: "https://github.com/J3SUNG/Who-s-The-ZARA",
-      url2: "https://j3sung.tistory.com/1129",
+      url: [
+        {
+          name: "github",
+          link: "https://github.com/J3SUNG/Who-s-The-ZARA",
+        },
+        {
+          name: "회고",
+          link: "https://j3sung.tistory.com/1129",
+        },
+      ],
       icon: whosTheZARAIcon,
     },
     {
@@ -192,10 +194,18 @@ export default function Project() {
         "- SSAFY 관통 프로젝트 최우수상 ",
         "- 공공데이터 API, Kakao Map API 활용",
         "- 다양한 라이브러리 사용 (크롤링, 이메일, 차트)",
-        "- 기획 설계를 더욱 시간을 들여서 해야한다는 것을 알게되었음",
+        "- 기획 설계의 중요성을 인지",
       ],
-      url: "https://github.com/J3SUNG/Nadri",
-      url2: "https://j3sung.tistory.com/1121",
+      url: [
+        {
+          name: "github",
+          link: "https://github.com/J3SUNG/Nadri",
+        },
+        {
+          name: "회고",
+          link: "https://j3sung.tistory.com/1121",
+        },
+      ],
       icon: nadriIcon,
     },
     {
@@ -220,97 +230,88 @@ export default function Project() {
       experience: [
         "- Outstanding Achievement Award 수상",
         "- 소프트웨어 설계를 통해 팀원간 협력 및 유지보수에 큰 이점",
-        "- 오류 노트 작성으로 같은 오류를 쉽게 처리 할 수 있었음",
+        "- 오류 노트 작성으로 같은 오류를 쉽게 해결",
       ],
-      url: "https://github.com/J3SUNG/Suite-Car",
-      url2: "https://j3sung.tistory.com/519",
+      url: [
+        {
+          name: "github",
+          link: "https://github.com/J3SUNG/Suite-Car",
+        },
+        {
+          name: "회고",
+          link: "https://j3sung.tistory.com/519",
+        },
+      ],
       icon: suiteCarIcon,
     },
   ];
 
   return (
     <>
-      <section
-        id="project"
-        className="flex justify-center flex-col w-[1140px] m-auto h-auto mt-[40px] pt-[120px]"
-      >
-        <h2 className="font-bold text-left text-blue-900 text-7xl">Project</h2>
-        <div className="flex flex-wrap justify-center w-auto mt-10 item-center">
-          {projects.map((item) => (
-            <div className="relative overflow-hidden flex shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] py-[40px] px-[40px] my-[40px] h-[1000px] w-full flex-nowrap rounded-md leading-8">
-              <div className="py-[10px] font-Binggrae flex flex-col justify-between">
-                <div className="">
-                  <div className="flex items-center">
-                    <h2 className="text-[50px] font-bold mr-[20px]">{item.name}</h2>
-                    <Image alt="whos the zara icon" src={item.icon} className="w-[60px] h-[60px]" />
-                  </div>
-                  <p className="text-2xl w-[520px] mt-[30px]">{item.subject}</p>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold">기술스택</h3>
-                  <p className="text-lg w-[500px]">{item.skill}</p>
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold">팀원</h3>
-                  <p className="text-lg w-[500px]">{item.team}</p>
-                </div>
-                <div className="">
-                  <div className="flex">
-                    <h3 className="text-lg font-bold">Git : </h3>
-                    <a
-                      className="text-lg w-auto text-sky-500 ml-[10px]"
-                      href={item.url}
-                      target="_blank"
-                    >
-                      {item.url}
-                    </a>
-                  </div>
-                  <div className="flex">
-                    <h3 className="text-lg font-bold">회고 : </h3>
-                    <a
-                      className="text-lg w-auto text-sky-500 ml-[10px]"
-                      href={item.url2}
-                      target="_blank"
-                    >
-                      {item.url2}
-                    </a>
-                  </div>
-                </div>
-                <div className="min-w-[520px] w-[520px] max-h-[320px] min-h-[320px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] border-black">
-                  <div className="flex flex-wrap">
-                    {item.img.map((imgItem) => (
-                      <Image
-                        src={imgItem}
-                        alt={item.name}
-                        className="w-[50%] min-h-[160px] max-h-[160px] h-full object-contain shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
-                      />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <div className="py-[10px] font-Binggrae flex flex-col justify-around ml-[60px] w-full">
-                <div>
-                  <h3 className="text-2xl font-bold mb-[5px]">주요기능</h3>
-                  {item.description.map((descriptionItem) => (
-                    <p className="text-[18px] w-[500px]">{descriptionItem}</p>
-                  ))}
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-[5px]">담당역할</h3>
-                  {item.role.map((roleItem) => (
-                    <p className="text-[18px] w-[500px]">{roleItem}</p>
-                  ))}
-                </div>
-                <div>
-                  <h3 className="text-2xl font-bold mb-[5px]">성과 및 배운점</h3>
-                  {item.experience.map((experienceItem) => (
-                    <p className="text-[18px] w-[500px]">{experienceItem}</p>
-                  ))}
-                </div>
+      <section id="project" className="w-[1280px] m-auto pt-[40px]">
+        <h2 className="font-bold text-blue-900 text-[72px]">Project</h2>
+        {projects.map((item) => (
+          <div className="shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] p-[32px] my-[40px] w-full rounded-md">
+            <div className="flex items-center">
+              <h2 className="text-[40px] font-bold mr-[20px]">{item.name}</h2>
+              <Image alt="whos the zara icon" src={item.icon} className="w-[50px] h-[50px]" />
+            </div>
+            <p className="text-[20px] font-bold text-gray-600">{item.subject}</p>
+            <div className="w-full h-[600px] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mt-[20px]">
+              <div className="flex flex-wrap">
+                {item.img.map((imgItem) => (
+                  <Image
+                    src={imgItem}
+                    alt={item.name}
+                    className={`w-[50%] h-[300px] object-contain shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]`}
+                  />
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+            <div className="mt-[16px]">
+              <h3 className="text-[24px] font-bold">기술스택</h3>
+              <p className="text-[20px]">{item.skill}</p>
+            </div>
+            <div className="mt-[16px]">
+              <h3 className="text-[24px] font-bold">팀원</h3>
+              <p className="text-[20px]">{item.team}</p>
+            </div>
+            {item.url.length > 0 && (
+              <div className="mt-[16px]">
+                <h3 className="text-[24px] font-bold">링크</h3>
+                {item.url.map((urlItem) => (
+                  <p className="text-[20px]">
+                    {urlItem.name} :{" "}
+                    <a className="text-sky-500" href={urlItem.link} target="_blank">
+                      {urlItem.link}
+                    </a>
+                  </p>
+                ))}
+              </div>
+            )}
+
+            <div className="mt-[16px]">
+              <h3 className="text-[24px] font-bold mb-[5px]">주요기능</h3>
+              {item.description.map((descriptionItem) => (
+                <p className="text-[20px]">{descriptionItem}</p>
+              ))}
+            </div>
+            {item.role && (
+              <div className="mt-[16px]">
+                <h3 className="text-[24px] font-bold mb-[5px]">담당역할</h3>
+                {item.role.map((roleItem) => (
+                  <p className="text-[20px]">{roleItem}</p>
+                ))}
+              </div>
+            )}
+            <div className="mt-[16px]">
+              <h3 className="text-[24px] font-bold mb-[5px]">성과 및 배운점</h3>
+              {item.experience.map((experienceItem) => (
+                <p className="text-[20px]">{experienceItem}</p>
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
     </>
   );

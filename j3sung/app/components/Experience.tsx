@@ -17,10 +17,10 @@ export default function Experience() {
       date: "2023-01-04 ~ 2023-12-29",
       title: "삼성 청년 SW 아카데미 (SSAFY 9기)",
       content: [
-        "- Learn : Computer Science, Java, Algorithm",
-        "- Front-end : Vue, HTML, CSS3, JavaScript, BootStrap",
-        "- Back-end : Spring Boot, MyBatis, MVC 아키텍처, MySQL",
-        "- Project : 관통 프로젝트(최우수상), 공통 프로젝트(우수상 1등), 자율 프로젝트(우수상 3등)",
+        "- 지역별 관광 데이터를 활용한 여행 정보 사이트 프로젝트 (최우수상)",
+        "- WEB RTC를 활용한 별주부전 컨셉 마피아 게임 프로젝트 (우수상 1등)",
+        "- 마이데이터를 활용한 아이 용돈 관리 서비스 프로젝트 ",
+        "- 오픈소스 차트 라이브러리 개발 프로젝트 (우수상 3등)",
       ],
       img: SSAFY,
     },
@@ -47,19 +47,16 @@ export default function Experience() {
     },
   ];
   return (
-    <section
-      id="experience"
-      className="flex justify-center flex-col w-[1140px] m-auto h-auto pt-[120px]"
-    >
-      <h2 className="mb-10 font-bold text-left text-blue-900 text-7xl">Experience</h2>
-      <div className="relative font-Binggrae -z-20">
+    <section id="experience" className="w-[1280px] m-auto pt-[40px]">
+      <h2 className="font-bold text-blue-900 text-[72px]">Experience</h2>
+      <div className="relative">
         {experience.map((item) => (
-          <div className="flex flex-col pl-8 my-8 px-8 ml-[10px] relative">
-            <div className="flex font-bold text-[22px]">
+          <div className="flex flex-col pl-[40px] py-[10px] ml-[10px] relative">
+            <div className="flex font-bold text-[24px] mt-[10px]">
               <p className="mr-[10px]">{item.title}</p>
               <p>({item.date})</p>
             </div>
-            <div className="mt-[12px] pl-0 text-[20px] w-full whitespace-normal">
+            <div className="mt-[10px] pl-0 text-[22px] w-full whitespace-normal">
               {item.content.map((content) => (
                 <p className="mb-[4px]">{content}</p>
               ))}
@@ -73,13 +70,13 @@ export default function Experience() {
               />
             </div>
             <Image
-              className="absolute left-[-5px] top-[4px] z-10 w-[18px] h-[18px]"
+              className="absolute left-[-6px] top-[30px] z-10 w-[18px] h-[18px]"
               src={triangle}
               alt="point"
             />
           </div>
         ))}
-        <div className="absolute bg-sky-200 top-[0px] left-[10px] w-[6px] h-[860px]"></div>
+        <div className="absolute bg-sky-200 top-[10px] left-[10px] w-[5px] h-[880px]"></div>
       </div>
     </section>
   );

@@ -38,7 +38,8 @@ module.exports = {
     },
     fontFamily: {
       DancingScript: ["DancingScript"],
-      Binggrae: ["Binggrae"],
+      regular: ["regular"],
+      bold: ["bold"],
     },
   },
   plugins: [],
