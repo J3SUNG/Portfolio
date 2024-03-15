@@ -20,10 +20,10 @@ import bc1 from "/public/img/projects/bc1.png";
 import bc2 from "/public/img/projects/bc2.gif";
 import bc3 from "/public/img/projects/bc3.gif";
 import bc4 from "/public/img/projects/bc4.gif";
-import jc1 from "/public/img/projects/jc1.png";
-import jc2 from "/public/img/projects/jc2.png";
-import jc3 from "/public/img/projects/jc3.png";
-import jc4 from "/public/img/projects/jc4.png";
+import jdc1 from "/public/img/projects/jdc1.png";
+import jdc2 from "/public/img/projects/jdc2.png";
+import jdc3 from "/public/img/projects/jdc3.png";
+import jdc4 from "/public/img/projects/jdc4.png";
 import ic1 from "/public/img/projects/ic1.png";
 import ic2 from "/public/img/projects/ic2.png";
 import ic3 from "/public/img/projects/ic3.png";
@@ -61,7 +61,7 @@ export default function Project() {
     },
     {
       name: "Jetty Chart",
-      img: [jc1, jc2, jc3, jc4],
+      img: [jdc1, jdc2, jdc3, jdc4],
       skill: "React, Nextjs, jira, git",
       team: "개발 : 6명",
       subject: "오픈소스 차트 라이브러리 개발 프로젝트",
