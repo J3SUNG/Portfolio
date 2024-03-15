@@ -20,14 +20,14 @@ import bc1 from "/public/img/projects/bc1.png";
 import bc2 from "/public/img/projects/bc2.gif";
 import bc3 from "/public/img/projects/bc3.gif";
 import bc4 from "/public/img/projects/bc4.gif";
+import idc1 from "/public/img/projects/idc1.png";
+import idc2 from "/public/img/projects/idc2.png";
+import idc3 from "/public/img/projects/idc3.png";
+import idc4 from "/public/img/projects/idc4.png";
 import jc1 from "/public/img/projects/jc1.png";
 import jc2 from "/public/img/projects/jc2.png";
 import jc3 from "/public/img/projects/jc3.png";
 import jc4 from "/public/img/projects/jc4.png";
-import ic1 from "/public/img/projects/ic1.png";
-import ic2 from "/public/img/projects/ic2.png";
-import ic3 from "/public/img/projects/ic3.png";
-import ic4 from "/public/img/projects/ic4.png";
 import empty from "/public/img/projects/empty.png";
 import Image from "next/image";
 
@@ -96,7 +96,7 @@ export default function Project() {
     },
     {
       name: "아이돈케어",
-      img: [ic1, ic2, ic3, ic4],
+      img: [idc1, idc2, idc3, idc4],
       skill:
         "Typescript, React, Tailwind, PWA, React Query, Recoil, Spring Boot, Spring Security, JPA, MYSQL, Redis, Docker, Jest, Jira, Git",
       team: "FrontEnd 3명 / BackEnd 3명",
