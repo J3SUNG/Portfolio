@@ -40,21 +40,21 @@ export default function Project() {
       team: "프론트엔드 : 1인 개발",
       subject: "블록 코딩 서비스 개발",
       description: [
-        "- 블록 구현 (선언문, 일반문, 제어문, 표현식)",
-        "- 블록 연결 및 배치",
-        "- 프로그램 실행 제어",
-        "- 프로그램 실행 예외 처리",
-        "- URL 블록 공유 기능",
-        "- Javascript 코드 추출 기능",
-        "- JSON 저장 / 불러오기 기능",
-        "- 디버깅 기능 구현",
-        "- 복사 기능",
-        "- 되돌리기 기능",
+        "• 블록 구현 (선언문, 일반문, 제어문, 표현식)",
+        "• 블록 연결 및 배치",
+        "• 프로그램 실행 제어",
+        "• 프로그램 실행 예외 처리",
+        "• URL 블록 공유 기능",
+        "• Javascript 코드 추출 기능",
+        "• JSON 저장 / 불러오기 기능",
+        "• 디버깅 기능 구현",
+        "• 복사 기능",
+        "• 되돌리기 기능",
       ],
       experience: [
-        "- 코드 리뷰와 대면 리뷰를 통해 피드백을 받고, 피드백을 통해 개선하는 경험",
-        "- 기술을 적용 할 때 해당 기술이 왜 필요하고, 어떤 점이 이점이 되는지를 고민하는 습관을 가짐",
-        "- 설계에 문제가 생길 경우, 프로젝트가 커질 수록 문제가 발생하고 늦어질수록 고치는 비용이 많이 드는 것을 경험",
+        "• 코드 리뷰와 대면 리뷰를 통해 피드백을 받고, 피드백을 통해 개선하는 경험",
+        "• 기술을 적용 할 때 해당 기술이 왜 필요하고, 어떤 점이 이점이 되는지를 고민하는 습관을 가짐",
+        "• 설계에 문제가 생길 경우, 프로젝트가 커질 수록 문제가 발생하고 늦어질수록 고치는 비용이 많이 드는 것을 경험",
       ],
       url: [{ name: "github", link: "https://github.com/J3SUNG/BlockCoding" }],
       icon: blockCodingIcon,
@@ -66,26 +66,17 @@ export default function Project() {
       team: "개발 : 6명",
       subject: "오픈소스 차트 라이브러리 개발 프로젝트",
       description: [
-        "1. 차트 개발",
-        "- bar / stacked bar",
-        "- line / stacked line",
-        "- pie / donut",
-        "- bump",
-        "- scatter",
-        "- pyramid",
-        "- map",
-        "2. 데모 사이트 개발",
-        "- 설정에 따라 변경되는 차트를 직접 확인 가능",
-        "- 설정한 차트를 코드로 변환하여 보다 쉽게 사용 할 수 있게 함",
-        "3. NPM 배포",
-        "- 실제로 배포 받아 해당 차트를 사용 가능",
+        "• 차트 개발 (bar, line, pie, donut, bump, scatter, pyramid, map)",
+        "• 데모 사이트 개발",
+        "• NPM 배포",
       ],
-      role: ["- 파이차트, 도넛차트 개발, 데모 사이트 개발"],
+      role: ["• 파이차트, 도넛차트 개발, 데모 사이트 개발"],
       experience: [
-        "- 오픈소스 프로젝트 진행",
-        "- 다양한 커스터마이징 기능의 차트 라이브러리 제공",
-        "- 데모 사이트 자동화를 통해서 빠르게 사이트 제작 완료",
-        "- 라이브러리로 사용 되는 것이므로 최적화가 중요",
+        "• SSAFY 공통 프로젝트 우수상 (3등)",
+        "• 오픈소스 프로젝트 진행",
+        "• 다양한 커스터마이징 기능의 차트 라이브러리 제공",
+        "• 데모 사이트 자동화를 통해서 빠르게 사이트 제작 완료",
+        "• 라이브러리로 사용 되는 것이므로 최적화가 중요",
       ],
       url: [
         { name: "데모 사이트", link: "https://jetty-chart-demo.vercel.app/" },
@@ -102,28 +93,28 @@ export default function Project() {
       team: "FrontEnd 3명 / BackEnd 3명",
       subject: "마이데이터를 활용한 아이 용돈 관리 서비스 제작",
       description: [
-        "- 로그인 보안 JWT 구현",
-        "- 부모와 자식 관계 관리",
-        "- 용돈 지급 및 정기 용돈 설정",
-        "- 미션 기능",
-        "- 결제, 이체 기능",
-        "- 용돈, 미션, 결제 등 내역 조회 기능",
-        "- 활동 보고서 (내역 시각화)",
+        "• 로그인 보안 JWT 구현",
+        "• 부모와 자식 관계 관리",
+        "• 용돈 지급 및 정기 용돈 설정",
+        "• 미션 기능",
+        "• 결제, 이체 기능",
+        "• 용돈, 미션, 결제 등 내역 조회 기능",
+        "• 활동 보고서 (내역 시각화)",
       ],
       url: [],
       role: [
-        "- FrontEnd",
-        "- UI/UX 개발",
-        "- 용돈 기능 구현",
-        "- 관계 기능 구현",
-        "- 로그인 관리",
-        "- 공통 컴포넌트 개발",
+        "• FrontEnd",
+        "• UI/UX 개발",
+        "• 용돈 기능 구현",
+        "• 관계 기능 구현",
+        "• 로그인 관리",
+        "• 공통 컴포넌트 개발",
       ],
       experience: [
-        "- React Query, Recoil, PWA, Jest 등 새로운 기술 사용 경험",
-        "- 최적화 통해 성능 향상",
-        "- 모바일 환경 UI/UX에 대한 공부 필요",
-        "- 상황에 맞는 테스트 기법이 필요",
+        "• React Query, Recoil, PWA, Jest 등 새로운 기술 사용 경험",
+        "• 최적화 통해 성능 향상",
+        "• 모바일 환경 UI/UX에 대한 공부 필요",
+        "• 상황에 맞는 테스트 기법이 필요",
       ],
       icon: iDonCareIcon,
     },
@@ -135,28 +126,28 @@ export default function Project() {
       team: "FrontEnd 3명 / BackEnd 3명",
       subject: "WEB RTC를 활용한 별주부전 컨셉 마피아 게임",
       description: [
-        "- 로그인 보안 JWT 구현",
-        "- 게임 방 조회, 생성, 수정, 삭제",
-        "- 상점 기능",
-        "- 게임 전적 데이터 시각화",
-        "- 직업별 능력 구현 (토끼, 자라, 무당, 장군, 탐관, 의원, 산적)",
-        "- 화상 및 팀원 간 채팅 기능",
-        "- 캐릭터 이동, 아바타, 말풍선",
-        "- 시간 별 상황 전환, 투표 및 능력 사용 기능",
+        "• 로그인 보안 JWT 구현",
+        "• 게임 방 조회, 생성, 수정, 삭제",
+        "• 상점 기능",
+        "• 게임 전적 데이터 시각화",
+        "• 직업별 능력 구현 (토끼, 자라, 무당, 장군, 탐관, 의원, 산적)",
+        "• 화상 및 팀원 간 채팅 기능",
+        "• 캐릭터 이동, 아바타, 말풍선",
+        "• 시간 별 상황 전환, 투표 및 능력 사용 기능",
       ],
       role: [
-        "- 팀장, FrontEnd 개발",
-        "- 웹사이트 UI/UX 개발",
-        "- 게임 개발",
-        "- 캐릭터 애니메이션 개발",
-        "- 웹소켓, API 연결",
+        "• 팀장, FrontEnd 개발",
+        "• 웹사이트 UI/UX 개발",
+        "• 게임 개발",
+        "• 캐릭터 애니메이션 개발",
+        "• 웹소켓, API 연결",
       ],
       experience: [
-        "- SSAFY 공통 프로젝트 우수상 (1등)",
-        "- Web RTC, Stomp 등 새로운 기술 사용 경험",
-        "- 게임 테스터들을 통해서 UX/UI 개선 경험",
-        "- 주제에 따라 중요한 부분이 다르다는 것을 인지(게임은 재미와 고객유치)",
-        "- 협업을 통해 Git, Jira, 컨벤션, 설계의 중요성 인지",
+        "• SSAFY 공통 프로젝트 우수상 (1등)",
+        "• Web RTC, Stomp 등 새로운 기술 사용 경험",
+        "• 게임 테스터들을 통해서 UX/UI 개선 경험",
+        "• 주제에 따라 중요한 부분이 다르다는 것을 인지(게임은 재미와 고객유치)",
+        "• 협업을 통해 Git, Jira, 컨벤션, 설계의 중요성 인지",
       ],
       url: [
         {
@@ -177,24 +168,24 @@ export default function Project() {
       team: "FrontEnd 1명 / BackEnd 1명",
       subject: "지역별 관광 데이터를 활용한 여행 정보 사이트",
       description: [
-        "- 지역별 관광지 데이터를 Map에 제공",
-        "- 선택한 관광지를 통해서 여행노트 작성 및 공유 가능",
-        "- 인기있는 관광지, 최근 본 여행지, 여행 관련 뉴스 등 제공",
-        "- 로그인 보안 JWT 구현",
-        "- 커뮤니티, 공지사항 제공",
-        "- 관광지 방문 로그를 활용하여 데이터 시각화",
+        "• 지역별 관광지 데이터를 Map에 제공",
+        "• 선택한 관광지를 통해서 여행노트 작성 및 공유 가능",
+        "• 인기있는 관광지, 최근 본 여행지, 여행 관련 뉴스 등 제공",
+        "• 로그인 보안 JWT 구현",
+        "• 커뮤니티, 공지사항 제공",
+        "• 관광지 방문 로그를 활용하여 데이터 시각화",
       ],
       role: [
-        "- 팀장, FrontEnd를 1인 개발",
-        "- 웹사이트 UI/UX 개발",
-        "- 관광지 데이터 시각화",
-        "- 뉴스 데이터 크롤링",
+        "• 팀장, FrontEnd를 1인 개발",
+        "• 웹사이트 UI/UX 개발",
+        "• 관광지 데이터 시각화",
+        "• 뉴스 데이터 크롤링",
       ],
       experience: [
-        "- SSAFY 관통 프로젝트 최우수상 ",
-        "- 공공데이터 API, Kakao Map API 활용",
-        "- 다양한 라이브러리 사용 (크롤링, 이메일, 차트)",
-        "- 기획 설계의 중요성을 인지",
+        "• SSAFY 관통 프로젝트 최우수상 ",
+        "• 공공데이터 API, Kakao Map API 활용",
+        "• 다양한 라이브러리 사용 (크롤링, 이메일, 차트)",
+        "• 기획 설계의 중요성을 인지",
       ],
       url: [
         {
@@ -215,22 +206,22 @@ export default function Project() {
       team: "FrontEnd 1명 / BackEnd 1명 / App 1명 / AI 1명",
       subject: "센서 데이터 분석 및 시각화, 운전자 도우미",
       description: [
-        "- 센서 데이터를 AI를 통해 보정",
-        "- Map API를 통해서 사용자와 해당 센서들에 대한 위치 확인",
-        "- 센서 데이터 시각화 (미세먼지, GPS, 심박수)",
-        "- 어플리케이션을 통해서 차량운전자에게 적절한 기능 추천",
+        "• 센서 데이터를 AI를 통해 보정",
+        "• Map API를 통해서 사용자와 해당 센서들에 대한 위치 확인",
+        "• 센서 데이터 시각화 (미세먼지, GPS, 심박수)",
+        "• 어플리케이션을 통해서 차량운전자에게 적절한 기능 추천",
       ],
       role: [
-        "- 팀장, FrontEnd 개발",
-        "- 소프트웨어 설계(프로시저 디자인, 플로우 차트)",
-        "- 웹사이트 UI/UX 개발",
-        "- 차트, 맵을 사용해서 시각화",
-        "- 추천 알고리즘 개발",
+        "• 팀장, FrontEnd 개발",
+        "• 소프트웨어 설계(프로시저 디자인, 플로우 차트)",
+        "• 웹사이트 UI/UX 개발",
+        "• 차트, 맵을 사용해서 시각화",
+        "• 추천 알고리즘 개발",
       ],
       experience: [
-        "- Outstanding Achievement Award 수상",
-        "- 소프트웨어 설계를 통해 팀원간 협력 및 유지보수에 큰 이점",
-        "- 오류 노트 작성으로 같은 오류를 쉽게 해결",
+        "• Outstanding Achievement Award 수상",
+        "• 소프트웨어 설계를 통해 팀원간 협력 및 유지보수에 큰 이점",
+        "• 오류 노트 작성으로 같은 오류를 쉽게 해결",
       ],
       url: [
         {
@@ -268,14 +259,6 @@ export default function Project() {
                 ))}
               </div>
             </div>
-            <div className="mt-[16px]">
-              <h3 className="text-[24px] font-bold">기술스택</h3>
-              <p className="text-[20px]">{item.skill}</p>
-            </div>
-            <div className="mt-[16px]">
-              <h3 className="text-[24px] font-bold">팀원</h3>
-              <p className="text-[20px]">{item.team}</p>
-            </div>
             {item.url.length > 0 && (
               <div className="mt-[16px]">
                 <h3 className="text-[24px] font-bold">링크</h3>
@@ -289,12 +272,22 @@ export default function Project() {
                 ))}
               </div>
             )}
+            <div className="mt-[16px]">
+              <h3 className="text-[24px] font-bold">팀원</h3>
+              <p className="text-[20px]">{item.team}</p>
+            </div>
+            <div className="mt-[16px]">
+              <h3 className="text-[24px] font-bold">기술스택</h3>
+              <p className="text-[20px]">{item.skill}</p>
+            </div>
 
             <div className="mt-[16px]">
               <h3 className="text-[24px] font-bold mb-[5px]">주요기능</h3>
-              {item.description.map((descriptionItem) => (
-                <p className="text-[20px]">{descriptionItem}</p>
-              ))}
+              <div className="flex w-[1000px] flex-wrap">
+                {item.description.map((descriptionItem) => (
+                  <p className="text-[20px] mr-[32px]">{descriptionItem}</p>
+                ))}
+              </div>
             </div>
             {item.role && (
               <div className="mt-[16px]">
