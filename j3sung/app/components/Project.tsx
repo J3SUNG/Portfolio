@@ -76,12 +76,11 @@ export default function Project() {
         "• 오픈소스 프로젝트 진행",
         "• 다양한 커스터마이징 기능의 차트 라이브러리 제공",
         "• 데모 사이트 자동화를 통해서 빠르게 사이트 제작 완료",
-        "• 라이브러리로 사용 되는 것이므로 최적화가 중요",
       ],
       url: [
         { name: "데모 사이트", link: "https://jetty-chart-demo.vercel.app/" },
         { name: "npm", link: "https://www.npmjs.com/package/jetty-chart" },
-        { name: "github", link: "https://github.com/sdh20282/jetty-chart" },
+        { name: "github", link: "https://github.com/J3SUNG/jetty-chart" },
       ],
       icon: jettyChartIcon,
     },
@@ -101,7 +100,7 @@ export default function Project() {
         "• 용돈, 미션, 결제 등 내역 조회 기능",
         "• 활동 보고서 (내역 시각화)",
       ],
-      url: [],
+      url: [{ name: "github", link: "https://github.com/J3SUNG/idoncare" }],
       role: [
         "• FrontEnd",
         "• UI/UX 개발",
