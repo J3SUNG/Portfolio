@@ -9,7 +9,7 @@ export default function Experience() {
   const experience = [
     {
       date: "2024-01-03 ~ 2024-02-29",
-      title: "카카오 채용 연계형 인턴",
+      title: "카카오 인턴",
       content: ["- 블록 코딩 서비스 개발", "- Front-end : HTML, CSS, Typescript"],
       img: kakao,
     },
