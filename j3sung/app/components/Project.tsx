@@ -62,7 +62,7 @@ export default function Project() {
     {
       name: "Jetty Chart",
       img: [jc1, jc2, jc3, jc4],
-      skill: "React, Nextjs, jira, git",
+      skill: "React, jira, git",
       team: "개발 : 6명",
       subject: "오픈소스 차트 라이브러리 개발 프로젝트",
       description: [
