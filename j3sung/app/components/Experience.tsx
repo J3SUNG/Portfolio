@@ -37,7 +37,7 @@ export default function Experience() {
     },
     {
       date: "2020-03-26 ~ 2020-08-14",
-      title: "인투시어 (경력 개발부)",
+      title: "인투시어",
       content: [
         "- 회원 가입 및 로그인 솔루션 제작 프로젝트 참여",
         "- Nodejs, React 개발 및 소프트웨어 설계 (프로시저 디자인, 플로우 차트)",
