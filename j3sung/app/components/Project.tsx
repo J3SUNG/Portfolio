@@ -88,7 +88,7 @@ export default function Project() {
       name: "아이돈케어",
       img: [idc1, idc2, idc3, idc4],
       skill:
-        "Typescript, React, Tailwind, PWA, React Query, Recoil, Spring Boot, Spring Security, JPA, MYSQL, Redis, Docker, Jest, Jira, Git",
+        "Typescript, React, Tailwind, PWA, Recoil, Spring Boot, Spring Security, JPA, MYSQL, Redis, Docker, Jira, Git",
       team: "FrontEnd 3명 / BackEnd 3명",
       subject: "마이데이터를 활용한 아이 용돈 관리 서비스 제작",
       description: [
@@ -113,7 +113,6 @@ export default function Project() {
         "• React Query, Recoil, PWA, Jest 등 새로운 기술 사용 경험",
         "• 최적화 통해 성능 향상",
         "• 모바일 환경 UI/UX에 대한 공부 필요",
-        "• 상황에 맞는 테스트 기법이 필요",
       ],
       icon: iDonCareIcon,
     },
